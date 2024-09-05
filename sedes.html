@@ -1,328 +1,77 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sedes - Vitalik</title>
+    <link rel="stylesheet" href="sedes.css">
+</head>
+<body>
 
-    <link rel="stylesheet" href="./global.css" />
-    <link rel="stylesheet" href="./sedes.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,800&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto Mono:wght@400&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto Slab:wght@700&display=swap"
-    />
-  </head>
-  <body>
-    <div class="sedes">
-      <section class="rectangle-parent">
-        <div class="frame-child"></div>
-        <div class="image-12-parent">
-          <img class="image-12-icon" alt="" src="./public/image-12@2x.png" />
-
-          <div class="frame-item"></div>
+    <!-- Header -->
+    <header>
+        <div class="logo-section">
+            <img src="logo.png" alt="Logo Vitalik">
+            <nav>
+                <a href="#">Servicios</a>
+                <a href="#">Contacto</a>
+                <a href="#">Plan</a>
+                <a href="#">Iniciar Sesión</a>
+                <a href="#" class="register-btn">Registrarse</a>
+            </nav>
         </div>
-      </section>
-      <img class="image-11-icon" alt="" src="./public/image-11@2x.png" />
+    </header>
 
-      <section class="rectangle-group">
-        <div class="frame-inner"></div>
-        <div class="rectangle-div"></div>
-      </section>
-      <section class="instance-parent">
-        <header class="rectangle-container">
-          <div class="instance-child"></div>
-          <div class="frame-parent">
-            <div class="instance-group">
-              <div
-                class="imagen-de-whatsapp-2024-08-09-parent"
-                id="groupContainer"
-              >
-                <img
-                  class="imagen-de-whatsapp-2024-08-09"
-                  loading="lazy"
-                  alt=""
-                  src="./public/imagen-de-whatsapp-20240809-a-las-194029-556c430c-3@2x.png"
-                />
+    <!-- Main Content -->
+    <main>
+        <!-- Bogotá Section -->
+        <section class="city-section">
+            <div class="city-background">
+                <h2>Bogotá</h2>
+                <div class="city-info">
+                    <p>North Point GYM</p>
+                    <p>C1. 159 #7-74</p>
+                    <p>Usaquén, Bogotá</p>
+                </div>
+                <div class="city-image">
+                    <img src="gym-bogota.jpg" alt="Gimnasio en Bogotá">
+                </div>
+            </div>
+        </section>
 
-                <a class="vitalik">VITALIK</a>
-              </div>
-              <div class="servicios-wrapper">
-                <a class="servicios" id="serviciosText">Servicios</a>
-              </div>
+        <!-- Medellín Section -->
+        <section class="city-section">
+            <div class="city-background">
+                <h2>Medellín</h2>
+                <div class="city-info">
+                    <p>C.C. Santafé</p>
+                    <p>Carrera 43A, Cl. 7 Sur #170</p>
+                    <p>Medellín, El Poblado</p>
+                    <p>Local 102</p>
+                </div>
+                <div class="city-image">
+                    <img src="gym-medellin.jpg" alt="Gimnasio en Medellín">
+                </div>
             </div>
-            <div class="frame-wrapper">
-              <div class="contacto-parent">
-                <div class="contacto" id="contactoContainer">
-                  <a class="contacto1">Plan</a>
-                </div>
-                <div class="contacto2" id="contactoContainer1">
-                  <a class="contacto3">Contacto</a>
-                </div>
-              </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <img src="logo.png" alt="Vitalik Logo">
+            <p>VITALIK</p>
+            <div class="social">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-whatsapp"></i></a>
             </div>
-          </div>
-          <div class="frame-container">
-            <div class="frame-group">
-              <div class="iniciar-sesin-wrapper">
-                <div class="iniciar-sesin">
-                  <div class="iniciar-sesin1">
-                    <a class="iniciar-sesin2">Iniciar Sesión</a>
-                  </div>
-                </div>
-              </div>
-              <div class="frame-div">
-                <div class="instance-wrapper">
-                  <div class="group-div">
-                    <div class="instance-item"></div>
-                    <a class="registrarse">Registrarse</a>
-                  </div>
-                </div>
-                <i class="descubre-tu-mejor"
-                  >Descubre Tu Mejor Versión con Nosotros</i
-                >
-              </div>
-            </div>
-          </div>
-        </header>
-        <div class="location-background-parent">
-          <div class="location-background"></div>
-          <div class="frame-wrapper1">
-            <div class="frame-parent1">
-              <div class="bogot-wrapper">
-                <h2 class="bogota" id="bogotText">Bogotá</h2>
-              </div>
-              <div class="frame-parent2">
-                <div class="north-point-gym-cl159-7-74-u-wrapper">
-                  <div class="north-point-gym-container" id="northPointGYM">
-                    <p class="north-point-gym">North Point GYM</p>
-                    <p class="cl159-7-74">Cl.159 #7-74</p>
-                    <p class="usaqun-bogot">Usaquén, Bogotá</p>
-                  </div>
-                </div>
-                <img
-                  class="dalle-2024-08-24-133930-a"
-                  loading="lazy"
-                  alt=""
-                  src="./public/dalle-20240824-133930--a-more-modest-and-typical-gym-exterior-located-in-an-urban-area-of-bogot-colombia-the-building-has-a-simple-functional-design-with-glass-windows-t-1@2x.png"
-                  id="dALLE20240824133930A"
-                />
-              </div>
-            </div>
-          </div>
         </div>
-      </section>
-      <section class="sedes-inner">
-        <div class="frame-parent3">
-          <div class="medelln-wrapper">
-            <h2 class="medelln" id="medellnText">
-              <a
-                class="medellín"
-                href="https://maps.app.goo.gl/yLZzi2Sn56nrqXVW9"
-                target="_blank"
-                >Medellín</a
-              >
-            </h2>
-          </div>
-          <div class="dalle-2024-08-24-142218-a-parent">
-            <img
-              class="dalle-2024-08-24-142218-a"
-              loading="lazy"
-              alt=""
-              src="./public/dalle-20240824-142218--a-gym-exterior-located-inside-a-shopping-mall-in-medelln-colombia-sharing-its-facade-with-neighboring-retail-stores-the-gym-is-part-of-a-continuou-1@2x.png"
-              id="dALLE20240824142218A"
-            />
-
-            <div class="cc-santaf-carrera-43a-cl-7-wrapper">
-              <a
-                class="cc-santaf-carrera-container"
-                href="https://maps.app.goo.gl/yLZzi2Sn56nrqXVW9"
-                target="_blank"
-                id="cCSantafCarrera"
-              >
-                <p class="cc-santaf">C.C Santafé</p>
-                <p class="carrera-43a-cl">Carrera 43A, Cl. 7 Sur #170</p>
-                <p class="medelln-el-poblado">Medellín, El Poblado</p>
-                <p class="local-102">Local 102</p>
-              </a>
-            </div>
-          </div>
+        <div class="footer-links">
+            <a href="#">Contáctenos</a>
+            <a href="#">Ubicación</a>
         </div>
-      </section>
-      <section class="pie-de-pgina">
-        <div class="pie-de-pagina">
-          <div class="footer-separator"></div>
-          <div class="footer-content">
-            <div class="imagen-de-whatsapp-2024-08-09-group">
-              <img
-                class="imagen-de-whatsapp-2024-08-091"
-                loading="lazy"
-                alt=""
-                src="./public/imagen-de-whatsapp-20240809-a-las-194029-556c430c-3-1@2x.png"
-              />
+    </footer>
 
-              <b class="vitalik1">VITALIK</b>
-            </div>
-          </div>
-          <div class="footer-background"></div>
-          <div class="footer-background1"></div>
-          <div class="footer-info">
-            <div class="footer-details">
-              <div class="pie-de-pagina1">
-                <div class="siguenos-wrapper">
-                  <b class="siguenos">Siguenos</b>
-                </div>
-                <div class="contact-us">
-                  <b class="contctenos" id="contctenosText">Contáctenos</b>
-                  <b class="ubicacion" id="ubicacinText">Ubicación</b>
-                </div>
-              </div>
-              <div class="redes">
-                <div class="redes1">
-                  <img
-                    class="facebook-icon"
-                    loading="lazy"
-                    alt=""
-                    src="C:\Users\Daniela\OneDrive - unimilitar.edu.co\O C T A V O\TECNOLOGÍA\PRIMER CORTE\VITALIK\IMÁGENES\Facebook_Icon.png"
-                    id="facebookImage"
-                  />
-
-                  <img
-                    class="instagram-circle-icon"
-                    loading="lazy"
-                    alt=""
-                    src="C:\Users\Daniela\OneDrive - unimilitar.edu.co\O C T A V O\TECNOLOGÍA\PRIMER CORTE\VITALIK\IMÁGENES\Instagram_Icon.png"
-                    id="instagramCircleImage"
-                  />
-
-                  <img
-                    class="whatsapp-icon"
-                    loading="lazy"
-                    alt=""
-                    src="C:\Users\Daniela\OneDrive - unimilitar.edu.co\O C T A V O\TECNOLOGÍA\PRIMER CORTE\VITALIK\IMÁGENES\WhatsApp_Icon.png"
-                    id="whatsAppImage"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <script>
-      var groupContainer = document.getElementById("groupContainer");
-      if (groupContainer) {
-        groupContainer.addEventListener("click", function (e) {
-          // Please sync "Frame 1" to the project
-        });
-      }
-      
-      var serviciosText = document.getElementById("serviciosText");
-      if (serviciosText) {
-        serviciosText.addEventListener("click", function (e) {
-          // Please sync "Servicios" to the project
-        });
-      }
-      
-      var contactoContainer = document.getElementById("contactoContainer");
-      if (contactoContainer) {
-        contactoContainer.addEventListener("click", function (e) {
-          // Please sync "Planes" to the project
-        });
-      }
-      
-      var contactoContainer1 = document.getElementById("contactoContainer1");
-      if (contactoContainer1) {
-        contactoContainer1.addEventListener("click", function (e) {
-          // Please sync "CONTACTOS" to the project
-        });
-      }
-      
-      var bogotText = document.getElementById("bogotText");
-      if (bogotText) {
-        bogotText.addEventListener("click", function () {
-          window.open("https://maps.app.goo.gl/LmaFe2hksWimjqEJ6");
-        });
-      }
-      
-      var northPointGYM = document.getElementById("northPointGYM");
-      if (northPointGYM) {
-        northPointGYM.addEventListener("click", function () {
-          window.open("https://maps.app.goo.gl/LmaFe2hksWimjqEJ6");
-        });
-      }
-      
-      var dALLE20240824133930A = document.getElementById("dALLE20240824133930A");
-      if (dALLE20240824133930A) {
-        dALLE20240824133930A.addEventListener("click", function () {
-          window.open("https://maps.app.goo.gl/LmaFe2hksWimjqEJ6");
-        });
-      }
-      
-      var medellnText = document.getElementById("medellnText");
-      if (medellnText) {
-        medellnText.addEventListener("click", function () {
-          window.open("https://maps.app.goo.gl/yLZzi2Sn56nrqXVW9");
-        });
-      }
-      
-      var dALLE20240824142218A = document.getElementById("dALLE20240824142218A");
-      if (dALLE20240824142218A) {
-        dALLE20240824142218A.addEventListener("click", function () {
-          window.open("https://maps.app.goo.gl/yLZzi2Sn56nrqXVW9");
-        });
-      }
-      
-      var cCSantafCarrera = document.getElementById("cCSantafCarrera");
-      if (cCSantafCarrera) {
-        cCSantafCarrera.addEventListener("click", function () {
-          window.open("https://maps.app.goo.gl/yLZzi2Sn56nrqXVW9");
-        });
-      }
-      
-      var contctenosText = document.getElementById("contctenosText");
-      if (contctenosText) {
-        contctenosText.addEventListener("click", function (e) {
-          // Please sync "CONTACTOS" to the project
-        });
-      }
-      
-      var ubicacinText = document.getElementById("ubicacinText");
-      if (ubicacinText) {
-        ubicacinText.addEventListener("click", function (e) {
-          window.location.href = "sedes.html";
-        });
-      }
-      
-      var facebookImage = document.getElementById("facebookImage");
-      if (facebookImage) {
-        facebookImage.addEventListener("click", function () {
-          window.open("https://es-la.facebook.com/");
-        });
-      }
-      
-      var instagramCircleImage = document.getElementById("instagramCircleImage");
-      if (instagramCircleImage) {
-        instagramCircleImage.addEventListener("click", function () {
-          window.open("https://www.instagram.com/?hl=es");
-        });
-      }
-      
-      var whatsAppImage = document.getElementById("whatsAppImage");
-      if (whatsAppImage) {
-        whatsAppImage.addEventListener("click", function () {
-          window.open(
-            "https://wa.me/+573007756383?text=Hola%20quiero%20saber%20m%C3%A1s%20sobre%20sus%20servicios"
-          );
-        });
-      }
-      </script>
-  </body>
-  </html>
+</body>
+</html>
