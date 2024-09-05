@@ -1,0 +1,154 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7bc04b;
+    padding: 20px;
+}
+
+header .logo-section {
+    display: flex;
+    align-items: center;
+}
+
+header .logo-section h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: white;
+}
+
+header .logo-section img {
+    height: 50px;
+    margin-left: 20px;
+}
+
+header nav a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.form-section {
+    width: 55%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-section .back-button {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.checkbox-group {
+    margin-bottom: 20px;
+}
+
+.checkbox-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #7bc04b;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #689f39;
+}
+
+.plan-details {
+    width: 35%;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.plan-details h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.plan-details p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.plan-details hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+footer {
+    background-color: #000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer img {
+    height: 50px;
+}
+
+footer p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+footer .social a {
+    margin: 0 10px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.footer-links {
+    margin-top: 20px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+}
