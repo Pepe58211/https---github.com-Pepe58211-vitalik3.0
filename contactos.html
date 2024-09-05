@@ -1,270 +1,60 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Vitalik</title>
+    <link rel="stylesheet" href="contactos.css">
+</head>
+<body>
 
-    <link rel="stylesheet" href="./global.css" />
-    <link rel="stylesheet" href="servicios.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto Slab:wght@700&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto Mono:wght@400&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,800&display=swap"
-    />
-  </head>
-  <body>
-    <div class="contactos">
-      <section class="frame-parent">
-        <div class="frame-group">
-          <div class="frame-container">
-            <div class="contctanos-parent">
-              <h2 class="contctanos">Contáctanos</h2>
-              <div class="frame-child"></div>
-            </div>
-            <div class="queremos-que-te-pongas-en-cont-wrapper">
-              <div class="queremos-que-te">
-                Queremos que te pongas en contacto con nosotros para compartir
-                tus comentarios, opiniones y necesidades.
-              </div>
-            </div>
-            <div class="contact-form-wrapper">
-              <div class="contact-form">
-                <div class="boton-enviar-correo" id="botonEnviarCorreo">
-                  <div class="boton-enviar-correo-child"></div>
-                  <div class="envianos-un-correo">Envianos un correo</div>
-                  <div class="gmail-logo-wrapper">
-                    <img
-                      class="gmail-logo-icon"
-                      alt=""
-                      src="./public/gmail-logo@2x.png"
-                    />
-                  </div>
-                </div>
-                <button class="boton-whatsapp" id="botonWhatsapp">
-                  <div class="boton-whatsapp-child"></div>
-                  <div class="hablemos-por-whatsapp">Hablemos por WhatsApp</div>
-                  <div class="whatsapp-wrapper">
-                    <img
-                      class="whatsapp-icon"
-                      alt=""
-                      src="./public/whatsapp@2x.png"
-                    />
-                  </div>
-                </button>
-              </div>
-            </div>
-          </div>
-          <header class="rectangle-parent">
-            <div class="instance-child"></div>
-            <div class="instance-parent">
-              <div
-                class="imagen-de-whatsapp-2024-08-09-parent"
-                id="groupContainer"
-              >
-                <img
-                  class="imagen-de-whatsapp-2024-08-09"
-                  loading="lazy"
-                  alt=""
-                  src="./public/imagen-de-whatsapp-20240809-a-las-194029-556c430c-3@2x.png"
-                />
-
-                <a class="vitalik">VITALIK</a>
-              </div>
-              <div class="servicios-wrapper">
-                <a class="servicios" id="serviciosText">Servicios</a>
-              </div>
-              <div class="contact-list-wrapper">
-                <div class="contact-list">
-                  <div class="contacto" id="contactoContainer">
-                    <a class="contacto1">Contacto</a>
-                  </div>
-                  <div class="contacto2" id="contactoContainer1">
-                    <a class="contacto3">Plan</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="frame-wrapper">
-              <div class="frame-div">
-                <div class="iniciar-sesin-wrapper">
-                  <div class="iniciar-sesin">
-                    <div class="iniciar-sesin1">
-                      <a class="iniciar-sesin2">Iniciar Sesión</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="frame-parent1">
-                  <div class="instance-wrapper">
-                    <div class="signup-background-parent">
-                      <div class="signup-background"></div>
-                      <a class="registrarse">Registrarse</a>
-                    </div>
-                  </div>
-                  <i class="descubre-tu-mejor"
-                    >Descubre Tu Mejor Versión con Nosotros</i
-                  >
-                </div>
-              </div>
-            </div>
-          </header>
+    <!-- Header -->
+    <header>
+        <div class="logo-section">
+            <img src="logo.png" alt="Logo Vitalik">
+            <nav>
+                <a href="#">Servicios</a>
+                <a href="#">Contacto</a>
+                <a href="#">Plan</a>
+                <a href="#">Iniciar Sesión</a>
+                <a href="#" class="register-btn">Registrarse</a>
+            </nav>
         </div>
-        <div class="wrapper-image-5">
-          <img
-            class="image-5-icon"
-            loading="lazy"
-            alt=""
-            src="./public/image-5@2x.png"
-          />
-        </div>
-      </section>
-      <footer class="pie-de-pgina">
-        <div class="pie-de-pagina">
-          <div class="footer-background"></div>
-          <div class="brand-info-footer">
-            <div class="imagen-de-whatsapp-2024-08-09-group">
-              <img
-                class="imagen-de-whatsapp-2024-08-091"
-                alt=""
-                src="./public/imagen-de-whatsapp-20240809-a-las-194029-556c430c-3-1@2x.png"
-              />
+    </header>
 
-              <b class="vitalik1">VITALIK</b>
+    <!-- Main Content -->
+    <main>
+        <section class="contact-section">
+            <div class="contact-info">
+                <h2>Contáctanos</h2>
+                <p>Queremos que te pongas en contacto con nosotros para compartir tus comentarios, opiniones y necesidades.</p>
+                <div class="contact-buttons">
+                    <button class="email-btn"><i class="fa fa-envelope"></i> Envíanos un correo</button>
+                    <button class="whatsapp-btn"><i class="fa fa-whatsapp"></i> Hablemos por WhatsApp</button>
+                </div>
             </div>
-          </div>
-          <div class="footer-dividers"></div>
-          <div class="footer-dividers1"></div>
-          <div class="footer-links">
-            <div class="links-content">
-              <div class="pie-de-pagina1">
-                <div class="follow-us">
-                  <b class="siguenos">Siguenos</b>
-                </div>
-                <div class="contact-and-location">
-                  <b class="contctenos" id="contctenosText">Contáctenos</b>
-                  <b class="ubicacin" id="ubicacinText">Ubicación</b>
-                </div>
-              </div>
-              <div class="redes">
-                <div class="redes1">
-                  <img
-                    class="facebook-icon"
-                    loading="lazy"
-                    alt=""
-                    src="./public/facebook@2x.png"
-                    id="facebookImage"
-                  />
-
-                  <img
-                    class="instagram-circle-icon"
-                    loading="lazy"
-                    alt=""
-                    src="./public/instagram-circle@2x.png"
-                    id="instagramCircleImage"
-                  />
-
-                  <img
-                    class="whatsapp-icon1"
-                    alt=""
-                    src="./public/whatsapp-1@2x.png"
-                    id="whatsAppImage"
-                  />
-                </div>
-              </div>
+            <div class="contact-image">
+                <img src="contact-image.jpg" alt="Contacta con nosotros">
             </div>
-          </div>
-        </div>
-      </footer>
-    </div>
+        </section>
+    </main>
 
-    <script>
-      var botonEnviarCorreo = document.getElementById("botonEnviarCorreo");
-      if (botonEnviarCorreo) {
-        botonEnviarCorreo.addEventListener("click", function () {
-          window.location.href =
-            "mailto:est.daniel.jara@unimilitar.edu.co?subject=Consulta&body=Hola%2C%20tengo%20una%20consulta%20sobre%20sus%20servicios.";
-        });
-      }
-      
-      var botonWhatsapp = document.getElementById("botonWhatsapp");
-      if (botonWhatsapp) {
-        botonWhatsapp.addEventListener("click", function () {
-          window.open(
-            "https://wa.me/+573007756383?text=Hola%20quiero%20saber%20m%C3%A1s%20sobre%20sus%20servicios"
-          );
-        });
-      }
-      
-      var groupContainer = document.getElementById("groupContainer");
-      if (groupContainer) {
-        groupContainer.addEventListener("click", function (e) {
-          // Please sync "Frame 1" to the project
-        });
-      }
-      
-      var serviciosText = document.getElementById("serviciosText");
-      if (serviciosText) {
-        serviciosText.addEventListener("click", function (e) {
-          // Please sync "Servicios" to the project
-        });
-      }
-      
-      var contactoContainer = document.getElementById("contactoContainer");
-      if (contactoContainer) {
-        contactoContainer.addEventListener("click", function (e) {
-          window.location.href = "c-o-n-t-a-c-t-o-s.html";
-        });
-      }
-      
-      var contactoContainer1 = document.getElementById("contactoContainer1");
-      if (contactoContainer1) {
-        contactoContainer1.addEventListener("click", function (e) {
-          // Please sync "Planes" to the project
-        });
-      }
-      
-      var contctenosText = document.getElementById("contctenosText");
-      if (contctenosText) {
-        contctenosText.addEventListener("click", function (e) {
-          window.location.href = "c-o-n-t-a-c-t-o-s.html";
-        });
-      }
-      
-      var ubicacinText = document.getElementById("ubicacinText");
-      if (ubicacinText) {
-        ubicacinText.addEventListener("click", function (e) {
-          // Please sync "Sedes" to the project
-        });
-      }
-      
-      var facebookImage = document.getElementById("facebookImage");
-      if (facebookImage) {
-        facebookImage.addEventListener("click", function () {
-          window.open("https://es-la.facebook.com/");
-        });
-      }
-      
-      var instagramCircleImage = document.getElementById("instagramCircleImage");
-      if (instagramCircleImage) {
-        instagramCircleImage.addEventListener("click", function () {
-          window.open("https://www.instagram.com/?hl=es");
-        });
-      }
-      
-      var whatsAppImage = document.getElementById("whatsAppImage");
-      if (whatsAppImage) {
-        whatsAppImage.addEventListener("click", function () {
-          window.open(
-            "https://wa.me/+573007756383?text=Hola%20quiero%20saber%20m%C3%A1s%20sobre%20sus%20servicios"
-          );
-        });
-      }
-      </script>
-  </body>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <img src="logo.png" alt="Vitalik Logo">
+            <p>VITALIK</p>
+            <div class="social">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="footer-links">
+            <a href="#">Contáctenos</a>
+            <a href="#">Ubicación</a>
+        </div>
+    </footer>
+
+</body>
 </html>
