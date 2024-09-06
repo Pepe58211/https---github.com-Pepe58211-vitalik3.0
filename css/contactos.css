@@ -1,4 +1,3 @@
-/* Global Styles */
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
@@ -9,14 +8,14 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  background-color: #7bc04b;
+  align-items: left;
+  background-color: #388e3c;
   padding: 20px;
 }
 
 header .logo-section {
   display: flex;
-  align-items: center;
+  align-items: ;
 }
 
 header .logo-section img {
@@ -25,7 +24,7 @@ header .logo-section img {
 
 header nav {
   display: flex;
-  align-items: center;
+  align-items: left;
 }
 
 header nav a {
@@ -35,12 +34,14 @@ header nav a {
   margin-left: 20px;
 }
 
-.register-btn {
-  background-color: #4caf50;
+.botones {
+  background-color: #8EC63F;
+  justify-content: right;
   padding: 10px 15px;
   border-radius: 20px;
   color: white;
 }
+
 
 main {
   padding: 20px;
@@ -84,14 +85,14 @@ button {
 }
 
 .email-btn {
-  background-color: #007bff; /* Color de fondo para el botón de correo */
+  background-color: #388e3c; /* Color de fondo para el botón de correo */
   color: white;
 
   
 }
 
 .whatsapp-btn {
-  background-color: #25d366; /* Color de fondo para el botón de WhatsApp */
+  background-color: #388e3c; /* Color de fondo para el botón de WhatsApp */
   color: white;
 }
 
@@ -106,7 +107,7 @@ button:hover {
 }
 
 .contact-buttons button {
-  background-color: #4caf50;
+  background-color: #388e3c;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -122,7 +123,7 @@ button:hover {
 }
 
 .contact-buttons .whatsapp-btn {
-  background-color: #25d366;
+  background-color: #388e3c;
 }
 
 .contact-image img {
