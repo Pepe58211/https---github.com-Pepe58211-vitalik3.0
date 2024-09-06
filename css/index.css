@@ -1,4 +1,4 @@
-/* Global Styles */
+
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
@@ -95,11 +95,12 @@ main {
 }
 
 .trainers-list li {
+  color: #000;
   margin: 15px 0;
   font-size: 1.2rem;
 }
 
-.sedes-section {
+.sedes-section {  
   margin-top: 50px;
 }
 
@@ -108,11 +109,21 @@ main {
   margin-bottom: 20px;
 }
 
-.sedes-image img, .secondary-image img {
-  width: 90%;
-  border-radius: 10px;
-  margin-top: 20px;
+.sedes-image img{
+  width: 100%; /* Ajusta el ancho del recorte */
+  height: 50px; /* Ajusta la altura del recorte */
+  /*overflow: hidden;  Oculta las partes que sobresalen */
+  position: relative;
+  /*PREGUNTAR COMO SE HACE PARA AJUSTAR ESTA IMAGNE*/
+  object-fit:cover;
 }
+
+.secondary-image {
+  width: 30%;
+  height: auto;
+
+
+} 
 
 footer {
   background-color: #000;
@@ -138,6 +149,7 @@ footer .social a {
 
 .footer-links {
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .footer-links a {

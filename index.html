@@ -8,16 +8,20 @@
 </head>
 <body>
 
-    <!-- Header -->
+    
     <header>
         <div class="logo-section">
             <img src="logo.png" alt="Logo Vitalik">
             <nav>
-                <a href="#">Servicios</a>
-                <a href="#">Contacto</a>
-                <a href="#">Plan</a>
-                <a href="#">Iniciar Sesión</a>
-                <a href="#" class="register-btn">Registrarse</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="contactos.html">Contacto</a>
+                <a href="planes.html">Plan</a>
+                <!--REVISAR ESTOS DOS BOTONES Y PREGUNTAR SI ES ADECUADO PONER UN <a> dentro de un <div>-->
+                <div class="buttons">
+                    <a href="iniciarsesion.html">Iniciar Sesión</a>
+                    <a href="registro.html">Registrarse</a>
+                </div>
+                
             </nav>
         </div>
     </header>
@@ -28,15 +32,15 @@
         <section class="hero-section">
             <h1>Entrena con Vitalik: Tu Cuerpo, Tu Potencial</h1>
             <div class="buttons">
-                <button class="primary-btn">Ver Horarios</button>
-                <button class="secondary-btn">Únete Ahora</button>
+                <a href="horarios.html" class="primary-btn">Ver Horarios</button>
+                <a href="registro.html" class="secondary-btn">Únete Ahora</button>
             </div>
         </section>
 
         <!-- Trainers Section -->
         <section class="trainers-section">
             <div class="trainers-image">
-                <img src="gym-1.jpg" alt="Entrenadores Certificados">
+                <img src="" alt="Entrenadores Certificados">
             </div>
             <ul class="trainers-list">
                 <li>1. Entrenadores Certificados</li>
@@ -50,7 +54,7 @@
         <section class="sedes-section">
             <h2>Vitalik SEDES</h2>
             <div class="sedes-image">
-                <img src="gym-2.jpg" alt="Sede Vitalik">
+                <img src="imagenes/imagen2.jpg" alt="Sede Vitalik">
             </div>
             <div class="secondary-image">
                 <img src="gym-3.jpg" alt="Sede Vitalik 2">
@@ -64,15 +68,26 @@
             <img src="logo.png" alt="Vitalik Logo">
             <p>VITALIK</p>
             <div class="social">
-                <img src="imagenes/Facebook_Icon.png" alt="Facebook_Icon">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-                <a href="#"><i class="fa fa-whatsapp"></i></a>
+                
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="imagenes/Facebook_Icon.png" alt="Facebook_Icon">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                
+                <a href="https://www.instagram.com" target="_blank"></a>
+                    <img src="imagenes/Instagram_Icon.png" alt="Instagram_Icon">
+                    <i class="fa fa-Instagram"></i>
+                </a>
+
+                <a href="tel:+573007756383" target="_blank"></a>
+                    <img src="imagenes/WhatsApp_Icon.png" alt="WhatsApp_Icon">
+                    <i class="fa fa-WhatsApp"></i>
+                </a>
             </div>
         </div>
         <div class="footer-links">
-            <a href="#">Contáctenos</a>
-            <a href="#">Ubicación</a>
+            <a href="contactos.html">Contáctenos</a>
+            <a href="sedes.html">Ubicación</a>
         </div>
     </footer>
 
