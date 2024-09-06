@@ -70,7 +70,39 @@ main {
 .contact-buttons {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
+}
+
+button {
+  display: flex;
+  align-items: center; /* Centra la imagen y el texto verticalmente */
+  padding: 10px 20px;   
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.email-btn {
+  background-color: #007bff; /* Color de fondo para el botón de correo */
+  color: white;
+
+  
+}
+
+.whatsapp-btn {
+  background-color: #25d366; /* Color de fondo para el botón de WhatsApp */
+  color: white;
+}
+
+button img.icono {
+  width: 20px; /* Ajusta el tamaño de la imagen */
+  height: 20px; /* Ajusta el tamaño de la imagen */
+  margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+button:hover {
+  opacity: 0.8; /* Efecto hover en los botones */
 }
 
 .contact-buttons button {
