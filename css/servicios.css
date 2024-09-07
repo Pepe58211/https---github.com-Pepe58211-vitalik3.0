@@ -1,4 +1,3 @@
-/* Global Styles */
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
@@ -10,8 +9,19 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #7bc04b;
+  background-color: #388e3c;
   padding: 20px;
+}
+
+.botones1, .botones2 {
+  padding: 10px;
+  text-align: right;
+  background-color: #8EC63F;
+  justify-content: right;
+  padding: 10px 15px;
+  border-radius: 20px;
+  color: white;
+
 }
 
 header .logo-section {

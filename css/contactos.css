@@ -8,14 +8,26 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  align-items: left;
+  text-align: left;
   background-color: #388e3c;
   padding: 20px;
 }
 
+
+.botones1, .botones2 {
+  padding: 10px;
+  text-align: right;
+  background-color: #8EC63F;
+  justify-content: right;
+  padding: 10px 15px;
+  border-radius: 20px;
+  color: white;
+
+}
+
 header .logo-section {
   display: flex;
-  align-items: ;
+  align-items: left;
 }
 
 header .logo-section img {
@@ -33,15 +45,6 @@ header nav a {
   text-decoration: none;
   margin-left: 20px;
 }
-
-.botones {
-  background-color: #8EC63F;
-  justify-content: right;
-  padding: 10px 15px;
-  border-radius: 20px;
-  color: white;
-}
-
 
 main {
   padding: 20px;
