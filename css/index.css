@@ -14,7 +14,7 @@ header {
   padding: 20px;
 }
 
-.botones1, .botones2 {
+.boton {
   padding: 10px;
   text-align: right;
   background-color: #8EC63F;
@@ -22,6 +22,7 @@ header {
   padding: 10px 15px;
   border-radius: 20px;
   color: white;
+  text-decoration: none;
 
 }
 
@@ -120,7 +121,7 @@ main {
   margin-bottom: 20px;
 }
 
-.sedes-image img{
+.sedes-image ::background{
   width: 100%; /* Ajusta el ancho del recorte */
   height: 50px; /* Ajusta la altura del recorte */
   /*overflow: hidden;  Oculta las partes que sobresalen */
