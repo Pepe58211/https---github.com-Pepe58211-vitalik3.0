@@ -1,4 +1,3 @@
-
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
@@ -6,24 +5,22 @@ body {
   color: #333;
 }
 
+/* Ajustes de header */
 header {
   display: flex;
   justify-content: space-between;
-  align-items: left;
+  align-items: center; /* Cambiado a 'center' para alinear mejor los elementos */
   background-color: #388e3c;
-  padding: 20px;
+  padding: 20px 40px; /* Aumentado el padding horizontal para mayor separación */
 }
 
 .boton {
-  padding: 10px;
-  text-align: right;
+  padding: 10px 20px; /* Simplificado y añadido más padding horizontal */
+  text-align: center; /* Alineación centrada para un mejor aspecto */
   background-color: #8EC63F;
-  justify-content: right;
-  padding: 10px 15px;
   border-radius: 20px;
   color: white;
   text-decoration: none;
-
 }
 
 header .logo-section {
@@ -44,35 +41,37 @@ header nav a {
   color: white;
   font-size: 1.2rem;
   text-decoration: none;
-  margin-left: 20px;
+  margin-left: 30px; /* Aumentado el espacio entre los enlaces */
 }
 
 .register-btn {
   background-color: #4caf50;
-  padding: 10px 15px;
+  padding: 10px 20px; /* Mayor espacio interno */
   border-radius: 20px;
   color: white;
 }
 
+/* Ajustes de main */
 main {
-  padding: 20px;
+  padding: 40px 20px; /* Aumentado el padding superior para mayor separación */
   text-align: center;
 }
 
+/* Hero section */
 .hero-section {
   background-image: url('hero-bg.jpg');
   background-size: cover;
-  padding: 50px;
+  padding: 60px 20px; /* Añadido padding lateral */
   color: white;
 }
 
 .hero-section h1 {
   font-size: 2.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 30px; /* Mayor separación con los elementos inferiores */
 }
 
 .buttons {
-  margin-top: 20px;
+  margin-top: 30px; /* Mayor separación superior */
 }
 
 .primary-btn, .secondary-btn {
@@ -90,6 +89,7 @@ main {
   background-color: #7bc04b;
 }
 
+/* Trainers section */
 .trainers-section {
   display: flex;
   align-items: center;
@@ -103,7 +103,7 @@ main {
 
 .trainers-list {
   text-align: left;
-  margin-left: 20px;
+  margin-left: 30px; /* Aumentado el margen izquierdo para mayor separación */
 }
 
 .trainers-list li {
@@ -112,40 +112,38 @@ main {
   font-size: 1.2rem;
 }
 
+/* Sedes section */
 .sedes-section {  
   margin-top: 50px;
 }
 
 .sedes-section h2 {
   font-size: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: 30px; /* Mayor separación inferior */
 }
 
-.sedes-image ::background{
-  width: 100%; /* Ajusta el ancho del recorte */
-  height: 50px; /* Ajusta la altura del recorte */
-  /*overflow: hidden;  Oculta las partes que sobresalen */
-  position: relative;
-  /*PREGUNTAR COMO SE HACE PARA AJUSTAR ESTA IMAGNE*/
-  object-fit:cover;
+.sedes-image {
+  width: 100%;
+  height: 300px; /* Ajustado para mejor proporción */
+  object-fit: cover; /* Imagen ajustada a su contenedor */
 }
 
 .secondary-image {
   width: 30%;
   height: auto;
+}
 
-
-} 
-
+/* Footer */
 footer {
   background-color: #000;
-  color: white;
+  color: white; /* Aseguramos que el texto sea visible sobre el fondo oscuro */
   padding: 20px;
   text-align: center;
 }
 
 footer img {
   height: 50px;
+  margin-bottom: 10px; /* Añadimos un pequeño margen para separar la imagen del texto */
 }
 
 footer p {
@@ -153,19 +151,34 @@ footer p {
   margin: 10px 0;
 }
 
+footer .social {
+  margin: 20px 0; /* Añadimos espacio alrededor de los íconos de redes sociales */
+}
+
 footer .social a {
   margin: 0 10px;
   color: white;
   font-size: 1.5rem;
+  display: inline-block; /* Esto asegura que el enlace envuelva correctamente el ícono y la imagen */
+  vertical-align: middle; /* Alinea verticalmente el ícono con la imagen */
+}
+
+footer .social img {
+  height: 30px; /* Ajusta el tamaño de los íconos de redes sociales */
+  vertical-align: middle; /* Alinea los íconos con el texto */
 }
 
 .footer-links {
   margin-top: 20px;
-  cursor: pointer;
 }
 
 .footer-links a {
   color: white;
   text-decoration: none;
   margin: 0 20px;
+  font-size: 1.2rem; /* Ajustamos el tamaño de los enlaces */
+}
+
+.footer-links a:hover {
+  text-decoration: underline; /* Añadimos un efecto hover para mejorar la interacción */
 }

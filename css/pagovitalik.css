@@ -129,32 +129,49 @@ form h2 {
 
 footer {
     background-color: #000;
-    color: white;
+    color: white; /* Aseguramos que el texto sea visible sobre el fondo oscuro */
     padding: 20px;
     text-align: center;
-}
-
-footer img {
+  }
+  
+  footer img {
     height: 50px;
-}
-
-footer p {
+    margin-bottom: 10px; /* Añadimos un pequeño margen para separar la imagen del texto */
+  }
+  
+  footer p {
     font-size: 1.2rem;
     margin: 10px 0;
-}
-
-footer .social a {
+  }
+  
+  footer .social {
+    margin: 20px 0; /* Añadimos espacio alrededor de los íconos de redes sociales */
+  }
+  
+  footer .social a {
     margin: 0 10px;
     color: white;
     font-size: 1.5rem;
-}
-
-.footer-links {
+    display: inline-block; /* Esto asegura que el enlace envuelva correctamente el ícono y la imagen */
+    vertical-align: middle; /* Alinea verticalmente el ícono con la imagen */
+  }
+  
+  footer .social img {
+    height: 30px; /* Ajusta el tamaño de los íconos de redes sociales */
+    vertical-align: middle; /* Alinea los íconos con el texto */
+  }
+  
+  .footer-links {
     margin-top: 20px;
-}
-
-.footer-links a {
+  }
+  
+  .footer-links a {
     color: white;
     text-decoration: none;
     margin: 0 20px;
-}
+    font-size: 1.2rem; /* Ajustamos el tamaño de los enlaces */
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline; /* Añadimos un efecto hover para mejorar la interacción */
+  }

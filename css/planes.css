@@ -2,55 +2,61 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    color: white;
-    background-color: #333;
-}
-
-header {
-    background-color: #7bc04b;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  /* Ajustes de header */
+  header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-header .logo {
-    display: flex;
-    align-items: center;
-}
-
-header .logo img {
-    height: 50px;
-    margin-right: 10px;
-}
-
-header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-header nav ul li {
-    margin-left: 20px;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-.register-btn {
-    background-color: #4caf50;
-    padding: 10px 15px;
+    align-items: center; /* Cambiado a 'center' para alinear mejor los elementos */
+    background-color: #388e3c;
+    padding: 20px 40px; /* Aumentado el padding horizontal para mayor separación */
+  }
+  
+  .boton {
+    padding: 10px 20px; /* Simplificado y añadido más padding horizontal */
+    text-align: center; /* Alineación centrada para un mejor aspecto */
+    background-color: #8EC63F;
     border-radius: 20px;
     color: white;
-}
-
-main {
-    margin: 20px;
-}
+    text-decoration: none;
+  }
+  
+  header .logo-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  header .logo-section img {
+    height: 50px;
+  }
+  
+  header nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  header nav a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin-left: 30px; /* Aumentado el espacio entre los enlaces */
+  }
+  
+  .register-btn {
+    background-color: #4caf50;
+    padding: 10px 20px; /* Mayor espacio interno */
+    border-radius: 20px;
+    color: white;
+  }
+  
+  /* Ajustes de main */
+  main {
+    padding: 40px 20px; /* Aumentado el padding superior para mayor separación */
+    text-align: center;
+  }
 
 .plan {
     background-image: url('gym-bg.jpg');
