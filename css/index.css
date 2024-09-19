@@ -1,3 +1,7 @@
+/* Estilo global */
+/*verde oscuro #388e3c
+Verde claro #8EC63F
+Verde más oscurto #0C4F30*/ 
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
@@ -5,73 +9,88 @@ body {
   color: #333;
 }
 
-/* Ajustes de header */
+/* Ajustes del header */
 header {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Cambiado a 'center' para alinear mejor los elementos */
-  background-color: #388e3c;
-  padding: 20px 40px; /* Aumentado el padding horizontal para mayor separación */
-}
-
-.boton {
-  padding: 10px 20px; /* Simplificado y añadido más padding horizontal */
-  text-align: center; /* Alineación centrada para un mejor aspecto */
+  align-items: center;
   background-color: #8EC63F;
-  border-radius: 20px;
-  color: white;
-  text-decoration: none;
+  padding: 20px 40px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Añadido sombra para destacar */
 }
 
-header .logo-section {
+.logo-section img {
+  height: 80px;
+  /*width: 50px;*/
+}
+
+.logo-section p {
+  text-align: center;
+  color: #f0f0f0;
+
+}
+
+.nav {
   display: flex;
-  align-items: center;
+  align-items: left;
 }
 
-header .logo-section img {
-  height: 50px;
-}
-
-header nav {
-  display: flex;
-  align-items: center;
-}
-
-header nav a {
+.nav a {
   color: white;
   font-size: 1.2rem;
   text-decoration: none;
-  margin-left: 30px; /* Aumentado el espacio entre los enlaces */
+  margin-left: 30px;
+  transition: color 0.3s ease;
+  text-align: left;
 }
 
-.register-btn {
-  background-color: #4caf50;
-  padding: 10px 20px; /* Mayor espacio interno */
-  border-radius: 20px;
+.nav a:hover {
+  color: #388e3c; /* Cambio de color en hover */
+  text-decoration: underline;
+}
+
+.botones {
+  display: flex;
+  gap: 10px;
+}
+
+.boton {
+  padding: 10px 20px;
+  text-align: center;
+  background-color: #0C4F30;
+  border-radius: 10px;
   color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+  background-color: #6fa02e; /* Cambio de color en hover */
+  box-shadow: #000;
 }
 
 /* Ajustes de main */
 main {
-  padding: 40px 20px; /* Aumentado el padding superior para mayor separación */
+  padding: 40px 20px;
   text-align: center;
 }
 
 /* Hero section */
 .hero-section {
-  background-image: url('hero-bg.jpg');
+  background-image: url('imagenes/imagensupfeed.png'); /* Fondo de la sección héroe */
   background-size: cover;
-  padding: 60px 20px; /* Añadido padding lateral */
+  background-position: center;
+  padding: 60px 20px;
   color: white;
 }
 
 .hero-section h1 {
   font-size: 2.5rem;
-  margin-bottom: 30px; /* Mayor separación con los elementos inferiores */
+  margin-bottom: 30px;
 }
 
 .buttons {
-  margin-top: 30px; /* Mayor separación superior */
+  margin-top: 30px;
 }
 
 .primary-btn, .secondary-btn {
@@ -83,6 +102,12 @@ main {
   color: white;
   font-size: 1.2rem;
   cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.primary-btn:hover, .secondary-btn:hover {
+  background-color: #388e3c;
 }
 
 .secondary-btn {
@@ -94,16 +119,19 @@ main {
   display: flex;
   align-items: center;
   margin-top: 40px;
+  flex-wrap: wrap;
 }
 
 .trainers-image img {
-  width: 50%;
+  width: 100%;
+  max-width: 50%; /* Controla que no sea más del 50% */
   border-radius: 10px;
 }
 
 .trainers-list {
   text-align: left;
-  margin-left: 30px; /* Aumentado el margen izquierdo para mayor separación */
+  margin-left: 30px;
+  flex: 1;
 }
 
 .trainers-list li {
@@ -113,37 +141,39 @@ main {
 }
 
 /* Sedes section */
-.sedes-section {  
+.sedes-section {
   margin-top: 50px;
+  text-align: center;
 }
 
 .sedes-section h2 {
   font-size: 2rem;
-  margin-bottom: 30px; /* Mayor separación inferior */
+  margin-bottom: 30px;
 }
 
-.sedes-image {
+.sedes-image img {
   width: 100%;
-  height: 300px; /* Ajustado para mejor proporción */
-  object-fit: cover; /* Imagen ajustada a su contenedor */
+  height: 300px;
+  object-fit: cover;
 }
 
-.secondary-image {
+.secondary-image img {
   width: 30%;
   height: auto;
+  margin-top: 20px;
 }
 
 /* Footer */
 footer {
   background-color: #000;
-  color: white; /* Aseguramos que el texto sea visible sobre el fondo oscuro */
+  color: white;
   padding: 20px;
   text-align: center;
 }
 
 footer img {
   height: 50px;
-  margin-bottom: 10px; /* Añadimos un pequeño margen para separar la imagen del texto */
+  margin-bottom: 10px;
 }
 
 footer p {
@@ -152,20 +182,20 @@ footer p {
 }
 
 footer .social {
-  margin: 20px 0; /* Añadimos espacio alrededor de los íconos de redes sociales */
+  margin: 20px 0;
 }
 
 footer .social a {
   margin: 0 10px;
   color: white;
   font-size: 1.5rem;
-  display: inline-block; /* Esto asegura que el enlace envuelva correctamente el ícono y la imagen */
-  vertical-align: middle; /* Alinea verticalmente el ícono con la imagen */
+  display: inline-block;
+  vertical-align: middle;
 }
 
 footer .social img {
-  height: 30px; /* Ajusta el tamaño de los íconos de redes sociales */
-  vertical-align: middle; /* Alinea los íconos con el texto */
+  height: 30px;
+  vertical-align: middle;
 }
 
 .footer-links {
@@ -176,9 +206,9 @@ footer .social img {
   color: white;
   text-decoration: none;
   margin: 0 20px;
-  font-size: 1.2rem; /* Ajustamos el tamaño de los enlaces */
+  font-size: 1.2rem;
 }
 
 .footer-links a:hover {
-  text-decoration: underline; /* Añadimos un efecto hover para mejorar la interacción */
+  text-decoration: underline;
 }
