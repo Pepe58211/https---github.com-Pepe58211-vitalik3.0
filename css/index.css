@@ -25,6 +25,11 @@ header {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Añadido sombra para destacar*/
 }
 
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
 .logo-section img {
   height: 80px;
 }
@@ -34,20 +39,11 @@ header {
   color: #f0f0f0;
 }
 
-
 .logo-section img {
   height: 80px;
   align-items: center; 
   
 }
-
-/*.logo-section p {
-  margin: 0;
-  font-size: 1.5rem;
-  text-align: center;
-  color: #f0f0f0; 
-
-} */
 
 .nav {
   display: flex;

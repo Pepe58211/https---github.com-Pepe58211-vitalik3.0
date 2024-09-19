@@ -1,3 +1,13 @@
+@media (max-width:768px) {
+  header{
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav {
+    margin-top:10px ;
+  }
+}
+
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
@@ -21,19 +31,20 @@ header {
 }
 
 .logo-section img {
-  height: 10px;
-  /* align-items: center; */
-  width: 50px;
+  height: 80px;
 }
 
 .logo-section p {
-  margin: 0;
-  font-size: 1.5rem;
-  /* text-align: center;
-  color: #f0f0f0; */
-
+  text-align: center;
+  color: #f0f0f0;
 }
 
+
+.logo-section img {
+  height: 80px;
+  align-items: center; 
+  
+}
 .nav {
   display: flex;
   align-items: left;
