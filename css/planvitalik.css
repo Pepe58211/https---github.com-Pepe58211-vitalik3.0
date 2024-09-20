@@ -1,85 +1,133 @@
-/* Global Styles */
-body {
+@media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+    .nav {
+      margin-top: 10px;
+    }
+  }
+  
+  /* Global Styles */
+  body {
     margin: 0;
     font-family: 'Arial', sans-serif;
     background-color: #f0f0f0;
     color: #333;
-}
-
-header {
+  }
+  
+  /* Header Principal */
+  .header-principal {
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #7bc04b;
-    padding: 20px;
-}
-
-header .logo-section {
+    background-color: #8EC63F;
+    padding: 20px 40px;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-principal .logo-section {
     display: flex;
     align-items: center;
-}
-
-header .logo-section h1 {
-    font-size: 2rem;
-    margin: 0;
+  }
+  
+  .header-principal .logo-section img {
+    height: 80px;
+    margin-right: 10px;
+  }
+  
+  .header-principal p {
+    font-size: 1.5rem;
     color: white;
-}
-
-header .logo-section img {
-    height: 50px;
-    margin-left: 20px;
-}
-
-header nav a {
+    font-weight: bold;
+  }
+  
+  .header-principal .nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-principal .nav a {
     color: white;
     font-size: 1.2rem;
     text-decoration: none;
-}
-
-main {
+    margin-left: 30px;
+    transition: color 0.3s ease;
+  }
+  
+  .header-principal .nav a:hover {
+    color: #388e3c;
+    text-decoration: underline;
+  }
+  
+  .header-principal .botones {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .header-principal .boton {
+    padding: 10px 20px;
+    background-color: #0C4F30;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .header-principal .boton:hover {
+    background-color: #6fa02e;
+  }
+  
+  /* Main Content */
+  main {
     display: flex;
     justify-content: space-between;
-    padding: 40px;
-}
-
-.form-section {
+    padding: 120px 40px; /* Espacio superior para evitar superposición con el header */
+  }
+  
+  /* Form Section */
+  .form-section {
     width: 55%;
     background-color: white;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-.form-section .back-button {
+  }
+  
+  .form-section .back-button {
     display: block;
     color: #333;
     text-decoration: none;
     font-size: 1.2rem;
     margin-bottom: 20px;
-}
-
-form input[type="text"],
-form input[type="email"],
-form input[type="date"] {
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="date"] {
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.checkbox-group {
+  }
+  
+  .checkbox-group {
     margin-bottom: 20px;
-}
-
-.checkbox-group label {
+  }
+  
+  .checkbox-group label {
     display: block;
     margin-bottom: 10px;
     font-size: 0.9rem;
-}
-
-.submit-button {
+  }
+  
+  .submit-button {
     display: block;
     width: 100%;
     padding: 15px;
@@ -89,66 +137,121 @@ form input[type="date"] {
     color: white;
     font-size: 1.2rem;
     cursor: pointer;
-}
-
-.submit-button:hover {
+  }
+  
+  .submit-button:hover {
     background-color: #689f39;
-}
-
-.plan-details {
+  }
+  
+  /* Plan Details Section */
+  .plan-details {
     width: 35%;
     background-color: #f5f5f5;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-.plan-details h2 {
+  }
+  
+  .plan-details h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-}
-
-.plan-details p {
+  }
+  
+  .plan-details p {
     display: flex;
     justify-content: space-between;
     font-size: 1.2rem;
     margin-bottom: 15px;
-}
-
-.plan-details hr {
+  }
+  
+  .plan-details hr {
     border: 0;
     border-top: 1px solid #ccc;
     margin: 20px 0;
-}
-
-footer {
+  }
+  
+  /* Footer */
+  footer {
     background-color: #000;
     color: white;
     padding: 20px;
     text-align: center;
-}
-
-footer img {
-    height: 50px;
-}
-
-footer p {
-    font-size: 1.2rem;
+    box-sizing: border-box;
+  }
+  
+  footer img {
+    height: 70px;
+    margin-bottom: 10px;
+  }
+  
+  footer p {
+    font-size: 1.3rem;
     margin: 10px 0;
-}
-
-footer .social a {
+    color: white;
+  }
+  
+  /* Líneas blancas */
+  .linea-blanca {
+    border-top: 5px solid #fff;
+    margin: 20px auto;
+    width: 30%;
+    align-items: center;
+  }
+  
+  footer .social {
+    margin: 20px 0; /* Ajusta el margen para separación adecuada */
+    vertical-align: middle;
+  }
+  
+  footer .social a {
+    display: inline-block;
     margin: 0 10px;
-    color: white;
-    font-size: 1.5rem;
-}
-
-.footer-links {
+  }
+  
+  footer .social img {
+    height: 30px;
+    vertical-align: 0;
+  }
+  
+  /* Links del footer */
+  .footer-links {
     margin-top: 20px;
-}
-
-.footer-links a {
-    color: white;
+  }
+  
+  .footer-links a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #f0f0f0;
     text-decoration: none;
-    margin: 0 20px;
-}
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Agrega borde a las secciones */
+  footer .footer-content, footer .footer-links {
+    margin: 10px 0;
+  }
+  
+  /* Añadir líneas divisorias */
+  .footer-content {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links {
+    margin-top: 50px;
+  }
+  
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+      padding: 100px 20px; /* Ajuste de padding en pantallas pequeñas */
+    }
+  
+    .form-section, .plan-details {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  

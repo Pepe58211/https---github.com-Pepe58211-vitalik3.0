@@ -4,23 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plan Vitalik</title>
-    <link rel="stylesheet" href="planvitalik.css">
+    <link rel="stylesheet" href="css/planvitalik.css">
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
+    <!-- Header Principal -->
+    <header class="header-principal">
         <div class="logo-section">
-            <h1>Planes</h1>
-            <img src="logo.png" alt="Logo Vitalik">
+            <img src="imagenes/LogoVitalik.png" alt="Logo Vitalik">
+            <p>VITALIK</p>
         </div>
-        <nav>
-            <a href="#">Inicio</a>
+        <nav class="nav">
+            <a href="servicios.html">Servicios</a>
+            <a href="contactos.html">Contacto</a>
+            <a href="planes.html">Plan</a>
         </nav>
+        <div class="botones"> 
+            <a href="iniciarsesion.html" class="boton">Iniciar Sesión</a>
+            <a href="registro.html" class="boton">Registrarse</a>
+        </div>
     </header>
 
     <!-- Main Content -->
     <main>
+        <!-- Form Section -->
         <section class="form-section">
             <a href="#" class="back-button">← Regresar</a>
             <form>
@@ -50,6 +57,7 @@
             </form>
         </section>
 
+        <!-- Plan Details Section -->
         <section class="plan-details">
             <h2>Plan Vitalik</h2>
             <p>1ra. Mensualidad <span>$80.000</span></p>
@@ -59,22 +67,25 @@
         </section>
     </main>
 
-    <!-- Footer -->
+    <!-- Footer Principal -->
     <footer>
         <div class="footer-content">
-            <img src="logo.png" alt="Vitalik Logo">
+            <img src="imagenes/LogoVitalik.png" alt="Vitalik Logo">
             <p>VITALIK</p>
-            <div class="social">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-                <a href="#"><i class="fa fa-whatsapp"></i></a>
-            </div>
         </div>
-        <div class="footer-links">
-            <a href="#">Contáctenos</a>
-            <a href="#">Ubicación</a>
+        <div class="linea-blanca"></div> <!-- Línea blanca entre logo y redes sociales -->
+        <div class="social">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="imagenes/Facebook_Icon.png" alt="Facebook_Icon">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="imagenes/Instagram_Icon.png" alt="Instagram_Icon">
+                <i class="fa fa-instagram"></i> 
+            </a>
+            <a href="tel:+573007756383" target="_blank">
+                <img src="imagenes/WhatsApp_Icon.png" alt="WhatsApp_Icon">
+                <i class="fa fa-whatsapp"></i> 
+            </a>
         </div>
-    </footer>
-
-</body>
-</html>
+        <div
