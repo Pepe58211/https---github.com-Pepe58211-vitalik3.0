@@ -1,4 +1,3 @@
-/* Global Styles */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -25,7 +24,7 @@ body {
     padding-top: 90px; /* Espacio para header fijo */
 }
 
-/* Header */
+/* Header Full */
 header {
     display: flex;
     justify-content: space-between;
@@ -100,82 +99,73 @@ header {
 
 /* Main Content */
 main {
-    padding: 20px;
-}
-
-.horarios-section {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.horarios-section h2 {
-    font-size: 2rem;
-    text-align: left;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #000;
-    display: inline-block;
-}
-
-.horarios-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.horario-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #8EC63F;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.horario-row .day {
-    font-weight: bold;
-    color: white;
-    flex: 1;
-}
-
-.horario-row .time {
-    display: inline-block;
-    padding: 10px;
-    background-color: #6fa02e;
-    border-radius: 5px;
-    color: white;
-    cursor: pointer;
-    margin-left: 5px;
-    flex: 1;
+    padding: 120px 20px 40px; /* Espacio adicional para el header fijo */
     text-align: center;
-    transition: background-color 0.3s ease;
 }
 
-.horario-row .time:hover {
-    background-color: #4caf50;
+/* City Section */
+.city-section {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    color: white;
+    text-align: center;
+    background-attachment: fixed; /* Efecto parallax */
 }
 
-.horario-row .time.selected {
-    background-color: #388e3c;
-    border: 2px solid #fff;
+.city-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 15px;
+    position: relative;
+    display: inline-block;
+    width: 80%;
+    max-width: 800px;
 }
 
-/* Responsiveness */
+.city-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.city-info {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.city-image {
+    margin-top: 20px;
+}
+
+.city-image img {
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de la línea separadora */
+.section-divider {
+    border: none;
+    height: 2px;
+    background-color: white;
+    margin: 40px 0;
+    width: 80%;
+    max-width: 1200px;
+    opacity: 0.8; /* Ligera transparencia para suavizar el efecto */
+}
+
 @media (max-width: 768px) {
-    .horario-row {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 5px;
+    .city-content {
+        width: 90%;
     }
-
-    .horario-row .time {
-        width: 100%; /* Ancho completo para tiempos en móvil */
-        margin-top: 5px;
-        flex: unset;
+    
+    .city-image img {
+        width: 100%;
     }
-
-    .horario-row .day {
-        width: 100%; /* Ancho completo para el día */
+    
+    .section-divider {
+        width: 90%; /* Ajuste de la línea para pantallas pequeñas */
     }
 }
 
