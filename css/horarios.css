@@ -1,3 +1,13 @@
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav {
+    margin-top: 10px;
+  }
+}
+
 /* Global Styles */
 body {
   margin: 0;
@@ -6,65 +16,85 @@ body {
   color: #333;
 }
 
-header {
+/* Header Principal */
+.header-principal {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #388e3c;
-  padding: 20px;
-}
-
-.botones1, .botones2 {
-  padding: 10px;
-  text-align: right;
   background-color: #8EC63F;
-  justify-content: right;
-  padding: 10px 15px;
-  border-radius: 20px;
+  padding: 20px 40px;
+  z-index: 1000;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-principal .logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.header-principal .logo-section img {
+  height: 80px;
+  margin-right: 10px;
+}
+
+.header-principal p {
+  font-size: 1.5rem;
   color: white;
-
+  font-weight: bold;
 }
 
-
-header .logo-section {
+.header-principal .nav {
   display: flex;
   align-items: center;
 }
 
-header .logo-section img {
-  height: 50px;
-}
-
-header nav {
-  display: flex;
-  align-items: center;
-}
-
-header nav a {
+.header-principal .nav a {
   color: white;
   font-size: 1.2rem;
   text-decoration: none;
-  margin-left: 20px;
+  margin-left: 30px;
+  transition: color 0.3s ease;
 }
 
-.register-btn {
-  background-color: #4caf50;
-  padding: 10px 15px;
-  border-radius: 20px;
+.header-principal .nav a:hover {
+  color: #388e3c;
+  text-decoration: underline;
+}
+
+.header-principal .botones {
+  display: flex;
+  gap: 10px;
+}
+
+.header-principal .boton {
+  padding: 10px 20px;
+  background-color: #0C4F30;
+  border-radius: 10px;
   color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
+.header-principal .boton:hover {
+  background-color: #6fa02e;
+}
+
+/* Ajustes de main */
 main {
-  padding: 20px;
+  padding: 120px 20px 40px; /* Espacio superior para evitar superposición con el header */
 }
 
 .city-schedule {
   margin-bottom: 40px;
 }
 
-.city-schedule h2 {
+.city-title {
   font-size: 2rem;
-  color: #333;
+  color: #8EC63F; /* Color del título de la ciudad */
+  text-align: left;
   margin-bottom: 20px;
 }
 
@@ -72,7 +102,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: white;
+  background-color: #fff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -95,34 +125,101 @@ main {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilo de la línea separadora */
+.section-divider {
+  border: none;
+  height: 2px;
+  background-color: #8EC63F; /* Color de la línea divisoria */
+  margin: 40px 0;
+  width: 80%;
+  max-width: 1200px;
+}
+
+@media (max-width: 768px) {
+  .city-schedule-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .city-image img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .section-divider {
+    width: 90%;
+  }
+}
+
+/* Footer */
 footer {
   background-color: #000;
   color: white;
   padding: 20px;
   text-align: center;
+  box-sizing: border-box;
 }
 
 footer img {
-  height: 50px;
+  height: 70px;
+  margin-bottom: 10px;
 }
 
 footer p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin: 10px 0;
+  color: white;
+}
+
+/* Líneas blancas */
+.linea-blanca {
+  border-top: 5px solid #fff;
+  margin: 20px auto;
+  width: 30%;
+  align-items: center;
+}
+
+footer .social {
+  margin: 20px 0; /* Ajusta el margen para separación adecuada */
+  vertical-align: middle;
 }
 
 footer .social a {
+  display: inline-block;
   margin: 0 10px;
-  color: white;
-  font-size: 1.5rem;
 }
 
+footer .social img {
+  height: 30px;
+  vertical-align: 0;
+}
+
+/* Links del footer */
 .footer-links {
   margin-top: 20px;
 }
 
 .footer-links a {
-  color: white;
+  display: inline-block;
+  margin: 0 10px;
+  color: #f0f0f0;
   text-decoration: none;
-  margin: 0 20px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Agrega borde a las secciones */
+footer .footer-content, footer .footer-links {
+  margin: 10px 0;
+}
+
+/* Añadir líneas divisorias */
+.footer-content {
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  margin-top: 50px;
 }
