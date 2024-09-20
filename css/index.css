@@ -32,17 +32,12 @@ header {
 
 .logo-section img {
   height: 80px;
+  align-items: center;
 }
 
 .logo-section p {
   text-align: center;
   color: #f0f0f0;
-}
-
-.logo-section img {
-  height: 80px;
-  align-items: center; 
-  
 }
 
 .nav {
@@ -139,39 +134,57 @@ footer p {
   color:white;
 }
 
-footer .social {
-  margin: 0px 30px ;
-  vertical-align: middle;
-  
+/* Líneas blancas */
+.linea-blanca {
+  border-top: 5px solid #fff;
+  margin: 20px auto;
+  width: 30%;
+  align-items: center;
 }
 
-footer .social a{
+footer .social {
+  margin: 20px 0; /* Ajusta el margen para separación adecuada */
+  vertical-align: middle;
+}
+
+footer .social a {
   display: inline-block;
   margin: 0 10px;
 }
 
 footer .social img {
   height: 30px;
-  /* margin-inline: 10px; */
   vertical-align: 0;
- 
-  
 }
 
+/* Links del footer */
 .footer-links {
   margin-top: 20px;
 }
 
 .footer-links a {
- display: inline-block;
- margin: 0 10px;
- color: #f0f0f0;
- text-decoration: none;
- 
+  display: inline-block;
+  margin: 0 10px;
+  color: #f0f0f0;
+  text-decoration: none;
 }
 
 .footer-links a:hover {
   text-decoration: underline;
+}
+
+/* Agrega borde a las secciones */
+footer .footer-content, footer .footer-links {
+  margin: 10px 0;
+}
+
+/* Añadir líneas divisorias */
+.footer-content {
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  margin-top: 50px;
 }
  
 
