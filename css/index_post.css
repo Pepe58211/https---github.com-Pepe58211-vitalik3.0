@@ -32,6 +32,7 @@ header {
 
 .logo-section img {
   height: 80px;
+  align-items: center;
 }
 
 .logo-section p {
@@ -39,12 +40,6 @@ header {
   color: #f0f0f0;
 }
 
-
-.logo-section img {
-  height: 80px;
-  align-items: center; 
-  
-}
 .nav {
   display: flex;
   align-items: left;
@@ -87,7 +82,7 @@ header {
 /* Ajustes de main */
 main {
   padding: 40px 20px;
-  text-align: center;
+  /* text-align: center; */
 }
 
 /* Hero section */
@@ -139,11 +134,12 @@ footer p {
 
 /* Líneas blancas */
 .linea-blanca {
-  border-top: 1px solid #fff;
-  margin: 20px 0;
+  border-top: 5px solid #fff;
+  margin: 20px auto;
+  width: 30%;
+  align-items: center;
 }
 
-/* Redes sociales */
 footer .social {
   margin: 20px 0; /* Ajusta el margen para separación adecuada */
   vertical-align: middle;
@@ -186,5 +182,5 @@ footer .footer-content, footer .footer-links {
 }
 
 .footer-links {
-  margin-top: 20px;
+  margin-top: 50px;
 }
