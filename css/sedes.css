@@ -1,12 +1,13 @@
-@media (max-width:768px) {
-  header{
+@media (max-width: 768px) {
+  header {
     flex-direction: column;
     align-items: center;
   }
   .nav {
-    margin-top:10px ;
+    margin-top: 10px;
   }
 }
+
 /* Global Styles */
 body {
   margin: 0;
@@ -15,74 +16,100 @@ body {
   color: #333;
 }
 
-/* Ajustes de header */
-header {
+/* Header Principal */
+.header-principal {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Cambiado a 'center' para alinear mejor los elementos */
-  background-color: #388e3c;
-  padding: 20px 40px; /* Aumentado el padding horizontal para mayor separación */
-}
-
-.boton {
-  padding: 10px 20px; /* Simplificado y añadido más padding horizontal */
-  text-align: center; /* Alineación centrada para un mejor aspecto */
+  align-items: center;
   background-color: #8EC63F;
-  border-radius: 20px;
+  padding: 20px 40px;
+  z-index: 1000;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-principal .logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.header-principal .logo-section img {
+  height: 80px;
+  margin-right: 10px;
+}
+
+.header-principal p {
+  font-size: 1.5rem;
   color: white;
-  text-decoration: none;
+  font-weight: bold;
 }
 
-header .logo-section {
+.header-principal .nav {
   display: flex;
   align-items: center;
 }
 
-header .logo-section img {
-  height: 50px;
-}
-
-header nav {
-  display: flex;
-  align-items: center;
-}
-
-header nav a {
+.header-principal .nav a {
   color: white;
   font-size: 1.2rem;
   text-decoration: none;
-  margin-left: 30px; /* Aumentado el espacio entre los enlaces */
+  margin-left: 30px;
+  transition: color 0.3s ease;
 }
 
-.register-btn {
-  background-color: #4caf50;
-  padding: 10px 20px; /* Mayor espacio interno */
-  border-radius: 20px;
+.header-principal .nav a:hover {
+  color: #388e3c;
+  text-decoration: underline;
+}
+
+.header-principal .botones {
+  display: flex;
+  gap: 10px;
+}
+
+.header-principal .boton {
+  padding: 10px 20px;
+  background-color: #0C4F30;
+  border-radius: 10px;
   color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.header-principal .boton:hover {
+  background-color: #6fa02e;
 }
 
 /* Ajustes de main */
 main {
-  padding: 40px 20px; /* Aumentado el padding superior para mayor separación */
+  padding: 120px 20px 40px;
   text-align: center;
 }
 
+/* City Section */
 .city-section {
-  margin-bottom: 40px;
   position: relative;
-}
-
-.city-background {
-  background-image: url('gym-background.jpg');
   background-size: cover;
-  padding: 40px;
+  background-position: center;
+  padding: 100px 20px;
   color: white;
   text-align: center;
-  position: relative;
-  border-radius: 15px;
+  background-attachment: fixed; /* Efecto parallax */
 }
 
-.city-background h2 {
+.city-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 15px;
+  position: relative;
+  display: inline-block;
+  width: 80%;
+  max-width: 800px;
+}
+
+.city-section h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
@@ -93,10 +120,7 @@ main {
 }
 
 .city-image {
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
+  margin-top: 20px;
 }
 
 .city-image img {
@@ -105,16 +129,42 @@ main {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilo de la línea separadora */
+.section-divider {
+  border: none;
+  height: 2px;
+  background-color: white;
+  margin: 40px 0;
+  width: 80%;
+  max-width: 1200px;
+  opacity: 0.8; /* Ligera transparencia para suavizar el efecto */
+}
+
+@media (max-width: 768px) {
+  .city-content {
+    width: 90%;
+  }
+  
+  .city-image img {
+    width: 100%;
+  }
+  
+  .section-divider {
+    width: 90%; /* Ajuste de la línea para pantallas pequeñas */
+  }
+}
+
+/* Footer */
 footer {
   background-color: #000;
-  color: white; /* Aseguramos que el texto sea visible sobre el fondo oscuro */
+  color: white;
   padding: 20px;
   text-align: center;
 }
 
 footer img {
   height: 50px;
-  margin-bottom: 10px; /* Añadimos un pequeño margen para separar la imagen del texto */
+  margin-bottom: 10px;
 }
 
 footer p {
@@ -123,20 +173,20 @@ footer p {
 }
 
 footer .social {
-  margin: 20px 0; /* Añadimos espacio alrededor de los íconos de redes sociales */
+  margin: 20px 0;
 }
 
 footer .social a {
   margin: 0 10px;
   color: white;
   font-size: 1.5rem;
-  display: inline-block; /* Esto asegura que el enlace envuelva correctamente el ícono y la imagen */
-  vertical-align: middle; /* Alinea verticalmente el ícono con la imagen */
+  display: inline-block;
+  vertical-align: middle;
 }
 
 footer .social img {
-  height: 30px; /* Ajusta el tamaño de los íconos de redes sociales */
-  vertical-align: middle; /* Alinea los íconos con el texto */
+  height: 30px;
+  vertical-align: middle;
 }
 
 .footer-links {
@@ -147,9 +197,9 @@ footer .social img {
   color: white;
   text-decoration: none;
   margin: 0 20px;
-  font-size: 1.2rem; /* Ajustamos el tamaño de los enlaces */
+  font-size: 1.2rem;
 }
 
 .footer-links a:hover {
-  text-decoration: underline; /* Añadimos un efecto hover para mejorar la interacción */
+  text-decoration: underline;
 }
