@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vitalik - Tu Cuerpo, Tu Potencial</title>
+    <title>Vitalik</title>
     <link rel="stylesheet" href="css/index_post.css">
 </head>
 <body>
@@ -18,28 +18,34 @@
             <a href="contactos.html">Contacto</a>
             <a href="planes.html">Plan</a>
         </nav>
-        <div class="botones"> 
-            <!-- <a href="iniciarsesion.html" class="boton" aria-label="Iniciar sesión en Vitalik">Iniciar Sesión</a> -->
-            <a href="registro.html" class="boton" >Usuario R</a>
-         </div>
+        <div class="usuario-info">
+            <p>USUARIO R</p>
+            <p>Plan Vitalik Premium</p>
+            <img src="imagenes/imagen15.png" alt="Usuario">
+        </div>
     </header>
 
     <!-- Main Content -->
     <main>
+        <!-- Hero Section -->
         <section class="hero-section">
-            <h1>Entrena con Vitalik: Tu Cuerpo, Tu Potencial</h1>
-            <img src="imagenes/imagensupfeed.png" alt="background">
+            <div class="hero-text">
+                <h1>Entrena con Vitalik: Tu Cuerpo, Tu Potencial</h1>
+            </div>
+            <figure class="image-container">
+                <img src="imagenes/imagensupfeed.png" alt="background">
+            </figure>
             <div class="buttons">
-                <a href="horarios.html" class="primary-btn">Ver Horarios</a>
-                <a href="registro.html" class="secondary-btn">Únete Ahora</a>
+                <a href="horarios.html" class="primary-btn bordered-btn">Ver Horarios</a>
+                <a href="registro.html" class="secondary-btn bordered-btn">Únete Ahora</a>
             </div>
         </section>
 
         <!-- Trainers Section -->
         <section class="trainers-section">
-            <div class="trainers-image">
+            <figure class="image-container trainers-image">
                 <img src="imagenes/Imagen1.png" alt="Entrenadores Certificados">
-            </div>
+            </figure>
             <ul class="trainers-list">
                 <li>1. Entrenadores Certificados</li>
                 <li>2. Atención Personalizada</li>
@@ -50,13 +56,12 @@
 
         <!-- Sedes Section -->
         <section class="sedes-section">
-            <h2>Vitalik SEDES</h2>
-            <div class="sedes-image">
+            <div class="overlay">
+                <h2>Vitalik SEDES</h2>
+            </div>
+            <figure class="image-container">
                 <img src="imagenes/imagen2.jpg" alt="Sede Vitalik">
-            </div>
-            <div class="secondary-image">
-                <img src="gym-3.jpg" alt="Sede Vitalik 2">
-            </div>
+            </figure>
         </section>
     </main>
 
@@ -87,6 +92,5 @@
             <a href="sedes.html">Ubicación</a>
         </div>
     </footer>
-
 </body>
 </html>
