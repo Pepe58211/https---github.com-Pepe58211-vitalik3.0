@@ -1,0 +1,215 @@
+/* Global Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav {
+        margin-top: 10px;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8EC63F;
+    padding: 20px 40px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo-section img {
+    height: 80px;
+    align-items: center;
+}
+
+.logo-section p {
+    text-align: center;
+    color: #f0f0f0;
+}
+
+.nav {
+    display: flex;
+    align-items: left;
+}
+
+.nav a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: color 0.3s ease;
+    text-align: left;
+}
+
+.nav a:hover {
+    color: #388e3c;
+    text-decoration: underline;
+}
+
+/* Usuario Info */
+.usuario-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #0C4F30;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.usuario-info p {
+    margin: 0;
+    color: #fff;
+}
+
+.usuario-info img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Content */
+main {
+    padding: 40px 20px;
+}
+
+/* Horarios Profesores Section */
+.horarios-section {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.horarios-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.horarios-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.horario-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8EC63F;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.horario-row .day {
+    font-weight: bold;
+    color: white;
+    flex: 1;
+}
+
+.horario-row .time {
+    display: inline-block;
+    padding: 10px;
+    background-color: #6fa02e;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-left: 5px;
+    flex: 1;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.horario-row .time:hover {
+    background-color: #4caf50;
+}
+
+.horario-row .time.selected {
+    background-color: #388e3c;
+    border: 2px solid #fff;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .horario-row {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .horario-row .time {
+        margin-top: 5px;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+footer img {
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 1.3rem;
+    margin: 10px 0;
+    color: white;
+}
+
+.linea-blanca {
+    border-top: 5px solid #fff;
+    margin: 20px auto;
+    width: 30%;
+    align-items: center;
+}
+
+footer .social {
+    margin: 20px 0;
+    vertical-align: middle;
+}
+
+footer .social a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer .social img {
+    height: 30px;
+    vertical-align: 0;
+}
+
+/* Links del footer */
+.footer-links {
+    margin-top: 20px;
+}
+
+.footer-links a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
