@@ -3,71 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vitalik</title>
+    <title>Planes - Vitalik</title>
     <link rel="stylesheet" href="css/planes.css">
 </head>
 <body>
 
-    <!-- Header / Navbar -->
-    <header>
-        <div class="logo-section"></div>
-            <img src="logo.png" alt="Logo Vitalik">
-                <nav class="nav">
-                <a href="servicios.html">Servicios</a>
-                <a href="contactos.html">Contacto</a>
-                <a href="planes.html">Plan</a>
-            </nav>
-            <div class="botones"> 
-                <a href="iniciarsesion.html" class="boton">Iniciar Sesión</a>
-                <a href="registro.html" class="boton">Registrarse</a>
-            </div>
+    <!-- Header Principal -->
+    <header class="header-principal">
+        <div class="logo-section">
+            <img src="imagenes/LogoVitalik.png" alt="Logo Vitalik">
+            <p>VITALIK</p>
+        </div>
+        <nav class="nav">
+            <a href="servicios.html">Servicios</a>
+            <a href="contactos.html">Contacto</a>
+            <a href="planes.html">Plan</a>
+        </nav>
+        <div class="botones"> 
+            <a href="iniciarsesion.html" class="boton">Iniciar Sesión</a>
+            <a href="registro.html" class="boton">Registrarse</a>
+        </div>
     </header>
+
     <!-- Main Content -->
     <main>
         <!-- Plan Free -->
-        <section class="plan">
-            <div class="plan-header free">
-                <h2>Vitalik Free</h2>
-                <p>Regístrate en Nuestra Web y obtendrás:</p>
+        <section class="plan free-plan">
+            <figure class="background-image">
+                <img src="imagenes/imagen5.jpg" alt="Fondo Plan Free">
+            </figure>
+            <div class="plan-content">
+                <div class="plan-header free">
+                    <h2>Vitalik Free</h2>
+                    <p>Regístrate en Nuestra Web y obtendrás:</p>
+                </div>
+                <ul>
+                    <li>Cortesía de 1 día para acceder al gimnasio</li>
+                    <li>Acceso a clase de Fitness en grupo</li>
+                </ul>
+                <p>Ideal para: Personas que están interesadas y quieren conocer nuestro servicio.</p>
+                <button class="cta-button">Regístrate ya!</button>
             </div>
-            <ul>
-                <li>Cortesía de 1 día para acceder al gimnasio</li>
-                <li>Acceso a clase de Fitness en grupo</li>
-            </ul>
-            <p>Ideal para: Personas que están interesadas y quieren conocer nuestro servicio.</p>
-            <button class="cta-button">Registrate ya!</button>
         </section>
 
+        <!-- Línea divisoria -->
+        <div class="linea-blanca"></div>
+
         <!-- Plan Premium -->
-        <section class="plan">
-            <div class="plan-header premium">
-                <h2>Vitalik Premium</h2>
-                <p>Precio: $140.000/mes</p>
+        <section class="plan premium-plan">
+            <figure class="background-image">
+                <img src="imagenes/imagen5.jpg" alt="Fondo Plan Premium">
+            </figure>
+            <div class="plan-content">
+                <div class="plan-header premium">
+                    <h2>Vitalik Premium</h2>
+                    <p>Precio: $140.000/mes</p>
+                </div>
+                <ul>
+                    <li>Entrenamiento Personalizado: Incluye 4 sesiones mensuales con entrenador.</li>
+                    <li>Clases de Fitness en Grupo: Acceso ilimitado a todas las clases grupales disponibles.</li>
+                    <li>Área de Pesas y Cardio: Acceso completo sin restricciones.</li>
+                </ul>
+                <p>Ideal para: Personas comprometidas con un programa de entrenamiento intensivo.</p>
+                <button class="cta-button">Inscríbete ya!</button>
             </div>
-            <ul>
-                <li>Entrenamiento Personalizado: Incluye 4 sesiones mensuales con entrenador.</li>
-                <li>Clases de Fitness en Grupo: Acceso ilimitado a todas las clases grupales disponibles.</li>
-                <li>Área de Pesas y Cardio: Acceso completo sin restricciones.</li>
-            </ul>
-            <p>Ideal para: Personas comprometidas con un programa de entrenamiento intensivo.</p>
-            <button class="cta-button">Inscribete ya!</button>
         </section>
     </main>
 
-    <!-- Footer -->
+    <!-- Footer Principal -->
     <footer>
         <div class="footer-content">
-            <img src="logo.png" alt="Vitalik Logo">
+            <img src="imagenes/LogoVitalik.png" alt="Vitalik Logo">
             <p>VITALIK</p>
-            <div class="social">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-                <a href="#"><i class="fa fa-whatsapp"></i></a>
-            </div>
         </div>
+        <div class="linea-blanca"></div> <!-- Línea blanca entre logo y redes sociales -->
+        <div class="social">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="imagenes/Facebook_Icon.png" alt="Facebook_Icon">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="imagenes/Instagram_Icon.png" alt="Instagram_Icon">
+                <i class="fa fa-instagram"></i> 
+            </a>
+            <a href="tel:+573007756383" target="_blank">
+                <img src="imagenes/WhatsApp_Icon.png" alt="WhatsApp_Icon">
+                <i class="fa fa-whatsapp"></i> 
+            </a>
+        </div>
+        <div class="linea-blanca"></div> <!-- Línea blanca entre redes sociales y links -->
         <div class="footer-links">
-            <a href="#">Contáctenos</a>
-            <a href="#">Ubicación</a>
+            <a href="contactos.html">Contáctenos</a>
+            <a href="sedes.html">Ubicación</a>
         </div>
     </footer>
 
