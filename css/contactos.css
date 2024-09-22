@@ -6,6 +6,25 @@
   .nav {
     margin-top: 10px;
   }
+
+  .contact-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-info, .contact-image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contact-image img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contact-info h2 {
+    font-size: 2rem;
+  }
 }
 
 /* Global Styles */
@@ -16,7 +35,7 @@ body {
   color: #333;
 }
 
-/* Header replicado del index */
+/* Header fijo */
 header {
   display: flex;
   justify-content: space-between;
@@ -24,6 +43,12 @@ header {
   background-color: #8EC63F;
   padding: 20px 40px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 97%;
+  z-index: 1000;
+  flex-wrap: wrap; /* Permitir que los elementos se ajusten en pantallas pequeñas */
 }
 
 .logo-section {
@@ -44,7 +69,9 @@ header {
 
 .nav {
   display: flex;
-  align-items: left;
+  flex-wrap: wrap;
+  justify-content: center; /* Centrar los enlaces si el espacio es pequeño */
+  align-items: center;
 }
 
 .nav a {
@@ -63,6 +90,7 @@ header {
 .botones {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap; /* Permitir que los botones se ajusten en pantallas pequeñas */
 }
 
 .boton {
@@ -81,18 +109,25 @@ header {
 
 /* Main Content */
 main {
-  padding: 120px 20px 40px; /* Espacio superior para evitar superposición con el header */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 150px 20px 40px; /* Ajuste para compensar el header fijo */
 }
 
+/* Sección de contacto organizada en dos columnas */
 .contact-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 40px;
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 20px; /* Reducir el margen superior */
 }
 
 .contact-info {
-  width: 55%;
+  width: 50%;
+  margin-right: 20px; /* Separación entre texto y la imagen */
 }
 
 .contact-info h2 {
@@ -111,40 +146,53 @@ main {
   gap: 15px;
 }
 
-button {
-  display: flex;
-  align-items: center;
-  padding: 10px 20px;
-  font-size: 16px;
+/* Mejoramos los botones */
+.contact-buttons button {
+  background-color: #388e3c; /* Color verde inicial */
+  color: white; /* Texto en blanco */
+  padding: 15px 25px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
+  font-size: 1.2rem;
   cursor: pointer;
+  display: flex; /* Cambiamos a display flex para alinear el ícono y el texto */
+  justify-content: flex-start; /* Alinea el texto e ícono al inicio */
+  align-items: center; /* Centra verticalmente ícono y texto */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  width: 100%; /* Hacer que el botón ocupe todo el ancho */
 }
 
-.email-btn {
-  background-color: #388e3c; /* Color de fondo para el botón de correo */
-  color: white;
+.contact-buttons button:hover {
+  background-color: #8EC63F; /* Mismo color del header */
+  transform: translateY(-2px);
 }
 
-.whatsapp-btn {
-  background-color: #388e3c; /* Color de fondo para el botón de WhatsApp */
-  color: white;
-}
-
-button img.icono {
+/* Icono dentro del botón */
+.contact-buttons button img {
   width: 20px;
   height: 20px;
-  margin-right: 10px; /* Espacio entre la imagen y el texto */
+  margin-right: 10px;
 }
 
-button:hover {
-  opacity: 0.8; /* Efecto hover en los botones */
+/* Hacer clic en todo el botón */
+.contact-buttons button a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* Imagen de contacto */
+.contact-image {
+  width: 40%;
 }
 
 .contact-image img {
-  width: 350px;
+  width: 100%;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Footer */
@@ -206,10 +254,6 @@ footer .social img {
   text-decoration: underline;
 }
 
-.footer-content, .footer-links {
-  margin: 10px 0;
-}
-
 .footer-content {
   margin-bottom: 10px;
 }
@@ -217,24 +261,3 @@ footer .social img {
 .footer-links {
   margin-top: 50px;
 }
-
-@media (max-width: 768px) {
-  .contact-section {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .contact-info, .contact-image {
-    width: 100%;
-  }
-
-  .contact-image img {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .contact-info h2 {
-    font-size: 2rem;
-  }
-}
-
