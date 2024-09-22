@@ -152,6 +152,8 @@ main {
   border: none;
   border-radius: 20px;
   cursor: pointer;
+  text-decoration: none; /* Para que sea un enlace funcional */
+  display: inline-block; /* Para que se comporte como un botón */
   align-self: center; /* Centrado debajo del texto */
 }
 
@@ -253,3 +255,4 @@ footer .social img {
     align-self: center; /* Centra el botón en dispositivos móviles */
   }
 }
+
