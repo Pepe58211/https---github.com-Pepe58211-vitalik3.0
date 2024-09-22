@@ -81,41 +81,37 @@ header {
 
 /* Hero Section */
 .hero-section {
-  background-image: url('imagenes/imagen11.png'); /* Imagen de fondo */
-  background-size: cover;
-  background-position: center;
-  padding: 50px 20px;
-  color: white;
-  text-align: center;
-  position: relative;
+    position: relative;
+    background-color: #555; /* Mantiene el color gris */
+    height: 300px; /* Ajuste de altura */
+    text-align: center;
+    color: white;
+    overflow: hidden;
 }
 
-.hero-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Capa oscura para mejorar la legibilidad */
-  z-index: 1;
+/* Imagen de fondo */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4; /* Aumentamos la opacidad de la imagen de fondo */
+    z-index: 1; /* Detrás del texto */
 }
 
+/* Texto centrado vertical y horizontalmente */
 .hero-text {
-  position: relative;
-  z-index: 2;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.hero-section h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-.hero-section p {
-  font-size: 1.2rem;
-  margin-top: 10px;
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%); /* Centra el texto verticalmente */
+    background-color: rgba(0, 0, 0, 0.6); /* Aumenta la opacidad del fondo del texto */
+    padding: 20px;
+    border-radius: 10px;
 }
 
 /* Main Content */
@@ -265,4 +261,6 @@ footer .social img {
     width: 100%;
   }
 }
+
+
 
