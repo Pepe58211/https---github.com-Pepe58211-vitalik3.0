@@ -16,7 +16,7 @@ body {
   color: #333;
 }
 
-/* Header replicado del index */
+/* Header fijo */
 header {
   display: flex;
   justify-content: space-between;
@@ -24,6 +24,12 @@ header {
   background-color: #8EC63F;
   padding: 20px 40px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 97%;
+  z-index: 1000;
+  flex-wrap: wrap; /* Permitir que los elementos se ajusten en pantallas pequeñas */
 }
 
 .logo-section {
@@ -44,7 +50,9 @@ header {
 
 .nav {
   display: flex;
-  align-items: left;
+  flex-wrap: wrap;
+  justify-content: center; /* Centrar los enlaces si el espacio es pequeño */
+  align-items: center;
 }
 
 .nav a {
@@ -63,6 +71,7 @@ header {
 .botones {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap; /* Permitir que los botones se ajusten en pantallas pequeñas */
 }
 
 .boton {
@@ -87,6 +96,7 @@ header {
     text-align: center;
     color: white;
     overflow: hidden;
+    margin-top: 80px; /* Ajuste para compensar el header fijo */
 }
 
 /* Imagen de fondo */
