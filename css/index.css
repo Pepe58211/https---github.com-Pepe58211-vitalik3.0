@@ -1,13 +1,4 @@
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-  }
-  .nav {
-    margin-top: 10px;
-  }
-}
-
+/* Estilos generales */
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
@@ -22,7 +13,11 @@ header {
   align-items: center;
   background-color: #8EC63F;
   padding: 20px 40px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Añadido sombra para destacar */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 97%;
+  top: 0;
+  z-index: 100;
 }
 
 .logo-section {
@@ -32,17 +27,15 @@ header {
 
 .logo-section img {
   height: 80px;
-  align-items: center;
 }
 
 .logo-section p {
-  text-align: center;
   color: #f0f0f0;
+  font-size: 1.5rem;
 }
 
 .nav {
   display: flex;
-  align-items: left;
 }
 
 .nav a {
@@ -51,11 +44,10 @@ header {
   text-decoration: none;
   margin-left: 30px;
   transition: color 0.3s ease;
-  text-align: left;
 }
 
 .nav a:hover {
-  color: #388e3c; /* Cambio de color en hover */
+  color: #388e3c;
   text-decoration: underline;
 }
 
@@ -75,18 +67,16 @@ header {
 }
 
 .boton:hover {
-  background-color: #6fa02e; /* Cambio de color en hover */
-  box-shadow: #000;
+  background-color: #6fa02e;
 }
 
-/* Ajustes de main */
 main {
-  padding: 40px 20px;
+  padding: 150px 20px; /* Ajuste para el header fijo */
 }
 
-/* Hero section */
+/* Hero Section */
 .hero-section {
-  position: relative; /* Para posicionar el texto encima */
+  position: relative;
   text-align: center;
   color: white;
 }
@@ -96,7 +86,7 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
   border-radius: 10px;
 }
@@ -106,13 +96,12 @@ main {
   margin: 0;
 }
 
-.hero-section .image-container img {
+.image-container img {
   width: 100%;
   height: auto;
   border-radius: 10px;
 }
 
-/* Botones en la hero section */
 .buttons {
   margin-top: 30px;
 }
@@ -136,11 +125,10 @@ main {
   background-color: #7bc04b;
 }
 
-/* Estilo adicional para los bordes */
 .bordered-btn {
-  border: 3px solid #8EC63F; /* Color del header */
+  border: 3px solid #8EC63F;
   color: #000;
-  background-color: #fff; /* Fondo blanco para resaltar */
+  background-color: #fff;
 }
 
 .bordered-btn:hover {
@@ -148,33 +136,46 @@ main {
   color: #fff;
 }
 
-/* Contenedores de imágenes para hacerlas responsivas */
 .image-container {
   width: 100%;
-  max-width: 100%;
   display: flex;
   justify-content: center;
   margin: 20px 0;
 }
 
-.image-container img {
+/* Sección de entrenadores */
+.trainers-section {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.trainers-section .trainers-image {
+  flex: 1;
+  max-width: 400px;
+}
+
+.trainers-section .trainers-image img {
   width: 100%;
-  height: auto;
-  max-width: 100%;
-  border-radius: 10px; /* Añadimos bordes redondeados */
+  border-radius: 10px;
 }
 
-@media (max-width: 768px) {
-  .hero-section h1 {
-    font-size: 2rem; /* Reducir el tamaño de la fuente en pantallas pequeñas */
-  }
-
-  .image-container img {
-    max-width: 90%;
-  }
+.trainers-list {
+  flex: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.2rem;
 }
 
-/* Ajuste general de los contenedores de imagen en secciones */
+.trainers-list li {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Sección de sedes */
 .sedes-section {
   position: relative;
   text-align: center;
@@ -209,53 +210,8 @@ main {
 .sedes-section h2 {
   font-size: 2.5rem;
   padding: 10px 20px;
-  background-color: rgba(142, 198, 63, 0.8); /* Fondo semitransparente */
+  background-color: rgba(142, 198, 63, 0.8);
   border-radius: 10px;
-}
-
-/* Trainers section */
-.trainers-section {
-  display: flex;
-  align-items: center;
-  gap: 30px; /* Espacio entre la imagen y la lista */
-  padding: 40px 20px;
-}
-
-.trainers-section .trainers-image {
-  flex: 1;
-  max-width: 400px;
-}
-
-.trainers-section .trainers-image img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.trainers-list {
-  flex: 1;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 1.2rem;
-}
-
-.trainers-list li {
-  margin-bottom: 10px;
-  padding: 10px;
-  border-bottom: 1px solid #ccc; /* Línea separadora */
-}
-
-@media (max-width: 768px) {
-  .trainers-section {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .trainers-section .trainers-image,
-  .trainers-section .trainers-list {
-    flex: none;
-    max-width: 100%;
-  }
 }
 
 /* Footer */
@@ -264,46 +220,16 @@ footer {
   color: white;
   padding: 20px;
   text-align: center;
-  box-sizing: border-box;
 }
 
 footer img {
   height: 70px;
-  margin-bottom: 10px;
 }
 
-footer p {
-  font-size: 1.3rem;
-  margin: 10px 0;
-  color: white;
-}
-
-/* Líneas blancas */
 .linea-blanca {
   border-top: 5px solid #fff;
   margin: 20px auto;
   width: 30%;
-  align-items: center;
-}
-
-footer .social {
-  margin: 20px 0; /* Ajusta el margen para separación adecuada */
-  vertical-align: middle;
-}
-
-footer .social a {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-footer .social img {
-  height: 30px;
-  vertical-align: 0;
-}
-
-/* Links del footer */
-.footer-links {
-  margin-top: 20px;
 }
 
 .footer-links a {
@@ -317,16 +243,87 @@ footer .social img {
   text-decoration: underline;
 }
 
-/* Agrega borde a las secciones */
-footer .footer-content, footer .footer-links {
-  margin: 10px 0;
+/* Media Queries */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .logo-section img {
+    height: 60px;
+  }
+
+  .nav {
+    margin-top: 10px;
+    flex-direction: column;
+  }
+
+  .nav a {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .botones {
+    margin-top: 10px;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .image-container img {
+    max-width: 90%;
+  }
 }
 
-/* Añadir líneas divisorias */
-.footer-content {
-  margin-bottom: 10px;
+@media (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+
+  .logo-section p {
+    font-size: 1.2rem;
+  }
+
+  .nav a {
+    font-size: 1rem;
+  }
+
+  .botones .boton {
+    padding: 8px 15px;
+    font-size: 1rem;
+  }
+
+  .hero-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .primary-btn, .secondary-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .image-container img {
+    max-width: 85%;
+  }
 }
 
-.footer-links {
-  margin-top: 50px;
+@media (max-width: 1024px) {
+  .trainers-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .trainers-section .trainers-image, 
+  .trainers-section .trainers-list {
+    flex: none;
+    max-width: 100%;
+  }
 }
+
+
+
