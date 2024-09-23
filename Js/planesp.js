@@ -9,7 +9,8 @@ document.getElementById("cancelarSubscripcion").addEventListener("click", functi
     setTimeout(function () {
         document.getElementById("ventanaFlotante").style.display = "none";
         document.getElementById("fondoOscuro").style.display = "none";
-    }, 5000);
+        window.location.href = "index.html";  // Redirige a la página de inicio
+    }, 3000);
 });
 
 // Botón para cerrar la ventana manualmente
