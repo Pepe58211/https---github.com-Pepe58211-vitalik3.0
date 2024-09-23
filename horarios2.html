@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="css/horarios2.css">
 </head>
 <body>
+
     <!-- HEADER Full -->
     <header>
         <div class="logo-section">
-            <img src="imagenes/LogoVitalik.png" alt="Logo Vitalik">
+            <a href="index_post.html">
+                <img src="imagenes/LogoVitalik.png" alt="Logo Vitalik">
+            </a>
             <p>VITALIK</p>
         </div>
         <nav class="nav">
@@ -32,35 +35,35 @@
         <section class="trainers">
             <h2>Entrenadores</h2>
             <div class="trainer-card">
-                <img src="imagenes/trainer1.png" alt="Entrenador Juan">
+                <img class="trainer-image" src="imagenes/Trainer_1.webp" alt="Entrenador Juan" onclick="openImageModal('imagenes/Trainer_1.webp')">
                 <div class="trainer-details">
                     <p>Juan Carlos</p>
                 </div>
                 <a class="schedule-btn" href="horariosprofes.html">Horarios</a>
             </div>
             <div class="trainer-card">
-                <img src="imagenes/trainer2.png" alt="Entrenador Chayan">
+                <img class="trainer-image" src="imagenes/Trainer_2.webp" alt="Entrenador Chayan" onclick="openImageModal('imagenes/Trainer_2.webp')">
                 <div class="trainer-details">
                     <p>Chayan Martínez</p>
                 </div>
                 <a class="schedule-btn" href="horariosprofes.html">Horarios</a>
             </div>
             <div class="trainer-card">
-                <img src="imagenes/trainer3.png" alt="Entrenadora Sara">
+                <img class="trainer-image" src="imagenes/Trainer_3.webp" alt="Entrenadora Sara" onclick="openImageModal('imagenes/Trainer_3.webp')">
                 <div class="trainer-details">
                     <p>Sara Torrez</p>
                 </div>
                 <a class="schedule-btn" href="horariosprofes.html">Horarios</a>
             </div>
             <div class="trainer-card">
-                <img src="imagenes/trainer4.png" alt="Entrenadora Maria">
+                <img class="trainer-image" src="imagenes/Trainer_4.webp" alt="Entrenadora Maria" onclick="openImageModal('imagenes/Trainer_4.webp')">
                 <div class="trainer-details">
                     <p>Maria Tellez</p>
                 </div>
                 <a class="schedule-btn" href="horariosprofes.html">Horarios</a>
             </div>
             <div class="trainer-card">
-                <img src="imagenes/trainer5.png" alt="Entrenador Lucas">
+                <img class="trainer-image" src="imagenes/Trainer_5.webp" alt="Entrenador Lucas" onclick="openImageModal('imagenes/Trainer_5.webp')">
                 <div class="trainer-details">
                     <p>Lucas Ramos</p>
                 </div>
@@ -69,13 +72,19 @@
         </section>
     </main>
 
+    <!-- Lightbox Modal -->
+    <div id="imageModal" class="image-modal">
+        <span class="close-modal" onclick="closeImageModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
     <!-- Footer -->
     <footer>
         <div class="footer-content">
             <img src="imagenes/LogoVitalik.png" alt="Vitalik Logo">
             <p>VITALIK</p>
         </div>
-        <div class="linea-blanca"></div>
+        <div class="linea-blanca"></div> <!-- Línea blanca entre logo y redes sociales -->
         <div class="social">
             <a href="https://www.facebook.com" target="_blank">
                 <img src="imagenes/Facebook_Icon.png" alt="Facebook_Icon">
@@ -87,11 +96,15 @@
                 <img src="imagenes/WhatsApp_Icon.png" alt="WhatsApp_Icon">
             </a>
         </div>
-        <div class="linea-blanca"></div>
+        <div class="linea-blanca"></div> <!-- Línea blanca entre redes sociales y links -->
         <div class="footer-links">
-            <a href="contactos.html">Contáctenos</a>
-            <a href="sedes.html">Ubicación</a>
+            <a href="contactosp.html">Contáctenos</a>
+            <a href="sedesp.html">Ubicación</a>
         </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="js/horarios2.js"></script>
 </body>
 </html>
+

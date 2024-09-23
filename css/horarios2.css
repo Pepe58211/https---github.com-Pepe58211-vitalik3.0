@@ -7,12 +7,13 @@ body {
     padding-top: 90px; /* Espacio para el header fijo */
 }
 
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #8EC63F;
-    padding: 15px 20px; /* Ajuste de padding para dispositivos móviles */
+    padding: 20px 40px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 100%;
@@ -26,14 +27,13 @@ header {
 }
 
 .logo-section img {
-    height: 50px; /* Ajuste de tamaño para dispositivos móviles */
-    margin-right: 10px;
+    height: 80px;
 }
 
 .logo-section p {
-    font-size: 1.2rem; /* Ajuste de tamaño de fuente */
+    font-size: 1.5rem;
     color: #fff;
-    margin: 0;
+    margin-left: 10px;
 }
 
 .nav {
@@ -43,36 +43,33 @@ header {
 
 .nav a {
     color: white;
-    font-size: 1rem; /* Ajuste de tamaño de fuente */
+    font-size: 1.2rem;
     text-decoration: none;
-    margin-left: 20px;
+    margin-left: 30px;
     transition: color 0.3s ease;
 }
 
 .nav a:hover {
-    color: #000;
+    color: #388e3c;
+    text-decoration: underline;
 }
 
+/* Estilo del usuario post-registro */
 .usuario-info {
     display: flex;
     align-items: center;
     gap: 10px;
     background-color: #0C4F30;
-    padding: 10px 15px; /* Ajuste de padding */
-    border-radius: 20px;
-}
-
-.user-container {
-    display: flex;
-    flex-direction: column;
-    text-align: right;
+    padding: 10px 20px;
+    border-radius: 10px;
 }
 
 .usuario-info img {
-    width: 40px; /* Ajuste de tamaño de imagen */
-    height: 40px; /* Ajuste de tamaño de imagen */
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    margin-left: 10px;
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
 .usuario-info p {
@@ -88,42 +85,39 @@ main {
 .trainers {
     max-width: 800px;
     margin: 0 auto;
-    padding: 0 10px; /* Ajuste de padding para dispositivos móviles */
 }
 
 .trainers h2 {
-    font-size: 1.8rem; /* Ajuste de tamaño de fuente */
-    text-align: left;
-    margin-bottom: 15px; /* Ajuste de margen */
+    font-size: 1.8rem;
+    margin-bottom: 15px;
     border-bottom: 2px solid #000;
-    display: inline-block;
 }
 
 .trainer-card {
     display: flex;
     align-items: center;
     background-color: #8EC63F;
-    padding: 10px 15px; /* Ajuste de padding */
+    padding: 10px 15px;
     border-radius: 15px;
-    margin-bottom: 15px; /* Ajuste de margen */
+    margin-bottom: 15px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     justify-content: space-between;
 }
 
 .trainer-card img {
-    width: 60px; /* Ajuste de tamaño de imagen */
-    height: 60px; /* Ajuste de tamaño de imagen */
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    margin-right: 15px; /* Ajuste de margen */
+    margin-right: 20px; /* Espacio entre la imagen y el nombre */
 }
 
 .trainer-details {
     flex-grow: 1;
-    font-size: 1rem; /* Ajuste de tamaño de fuente */
+    margin-left: 10px; /* Ajuste opcional */
 }
 
 .trainer-details p {
-    font-size: 1.2rem; /* Ajuste de tamaño de fuente */
+    font-size: 1.2rem;
     font-weight: bold;
     margin: 0;
 }
@@ -134,13 +128,51 @@ main {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    font-size: 0.9rem; /* Ajuste de tamaño de fuente */
+    font-size: 0.9rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 .schedule-btn:hover {
     background-color: #388e3c;
+}
+
+/* Lightbox Modal */
+.image-modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo oscuro semitransparente */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Botón de cierre en la esquina superior derecha */
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+    color: #bbb;
 }
 
 /* Footer */
@@ -153,12 +185,12 @@ footer {
 }
 
 footer img {
-    height: 50px;
+    height: 70px;
     margin-bottom: 10px;
 }
 
 footer p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin: 10px 0;
 }
 
@@ -199,75 +231,10 @@ footer .social img {
     text-decoration: underline;
 }
 
-/* Responsividad */
+/* Responsividad para móviles */
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .logo-section img {
-        height: 40px; /* Ajuste de tamaño de imagen para móvil */
-    }
-
-    .logo-section p {
-        font-size: 1.1rem; /* Ajuste de fuente para móvil */
-    }
-
-    .nav {
-        margin-top: 10px;
-    }
-
-    .nav a {
-        font-size: 1rem; /* Ajuste de fuente para móvil */
-        margin-left: 15px; /* Espaciado más pequeño */
-    }
-
-    .usuario-info {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 10px 10px; /* Ajuste de padding para móvil */
-    }
-
-    .user-container {
-        margin-top: 10px;
-        text-align: center; /* Ajuste de alineación para móvil */
-    }
-
-    .usuario-info img {
-        width: 35px; /* Ajuste de tamaño de imagen para móvil */
-        height: 35px; /* Ajuste de tamaño de imagen para móvil */
-    }
-
-    .trainer-card {
-        flex-direction: column; /* Ajuste de diseño en columna */
-        text-align: center;
-        padding: 15px; /* Ajuste de padding */
-    }
-
-    .trainer-card img {
-        width: 50px; /* Ajuste de tamaño de imagen */
-        height: 50px; /* Ajuste de tamaño de imagen */
-        margin-right: 0;
-        margin-bottom: 10px; /* Espacio adicional abajo */
-    }
-
-    .trainer-details {
-        margin-bottom: 10px; /* Espacio adicional abajo */
-    }
-
-    .trainer-details p {
-        font-size: 1.1rem; /* Ajuste de tamaño de fuente */
-    }
-
-    .schedule-btn {
-        width: 100%; /* Ancho completo para botones */
-        padding: 10px;
-        font-size: 1rem; /* Ajuste de fuente */
-    }
-
-    .trainers {
-        padding: 0 15px; /* Ajuste de padding */
+    .modal-content {
+        max-width: 80%;
+        max-height: 80%;
     }
 }
