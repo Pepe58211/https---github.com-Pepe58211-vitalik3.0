@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 768px) { 
   header {
     flex-direction: column;
     align-items: center;
@@ -17,7 +17,7 @@ body {
 }
 
 /* Header Principal */
-.header-principal {
+header {
   position: fixed;
   top: 0;
   width: 97%;
@@ -30,28 +30,28 @@ body {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.header-principal .logo-section {
+header .logo-section {
   display: flex;
   align-items: center;
 }
 
-.header-principal .logo-section img {
+header .logo-section img {
   height: 80px;
   margin-right: 10px;
 }
 
-.header-principal p {
+header .logo-section p {
   font-size: 1.5rem;
   color: white;
-  font-weight: bold;
+  font-weight: normal;
 }
 
-.header-principal .nav {
+header .nav {
   display: flex;
   align-items: center;
 }
 
-.header-principal .nav a {
+header .nav a {
   color: white;
   font-size: 1.2rem;
   text-decoration: none;
@@ -59,17 +59,17 @@ body {
   transition: color 0.3s ease;
 }
 
-.header-principal .nav a:hover {
+header .nav a:hover {
   color: #388e3c;
   text-decoration: underline;
 }
 
-.header-principal .botones {
+header .botones {
   display: flex;
   gap: 10px;
 }
 
-.header-principal .boton {
+header .boton {
   padding: 10px 20px;
   background-color: #0C4F30;
   border-radius: 10px;
@@ -78,13 +78,13 @@ body {
   transition: background-color 0.3s ease;
 }
 
-.header-principal .boton:hover {
+header .boton:hover {
   background-color: #6fa02e;
 }
 
 /* Ajustes de main */
 main {
-  padding: 120px 20px 40px; /* Espacio superior para evitar superposición con el header */
+  padding: 150px 20px 40px; /* Espacio superior para evitar superposición con el header */
 }
 
 .city-schedule {
@@ -92,8 +92,8 @@ main {
 }
 
 .city-title {
-  font-size: 2rem;
-  color: #8EC63F; /* Color del título de la ciudad */
+  font-size: 2.5rem; /* Aumentado el tamaño del título */
+  color: #8EC63F;
   text-align: left;
   margin-bottom: 20px;
 }
@@ -110,17 +110,17 @@ main {
 
 .schedule-box {
   text-align: left;
-  font-size: 1.2rem;
+  font-size: 1.5rem; /* Aumentado el tamaño del texto */
   margin-right: 20px;
 }
 
 .schedule-box h3 {
-  font-size: 1.5rem;
+  font-size: 2rem; /* Aumentado el tamaño del subtítulo */
   margin-bottom: 10px;
 }
 
 .city-image img {
-  width: 250px;
+  width: 350px; /* Ajustado el tamaño de la imagen */
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
@@ -129,7 +129,7 @@ main {
 .section-divider {
   border: none;
   height: 2px;
-  background-color: #8EC63F; /* Color de la línea divisoria */
+  background-color: #8EC63F;
   margin: 40px 0;
   width: 80%;
   max-width: 1200px;
