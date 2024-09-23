@@ -33,7 +33,7 @@ header {
     padding: 20px 40px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     position: fixed;
-    width: 100%;
+    width: 97%;
     top: 0;
     z-index: 1000;
 }
@@ -44,13 +44,13 @@ header {
 }
 
 .logo-section img {
-    height: 50px; /* Tamaño de logo para dispositivos móviles */
+    height: 80px;
 }
 
 .logo-section p {
-    font-size: 1.5rem; /* Tamaño de fuente ajustado */
+    font-size: 1.5rem;
     color: #fff;
-    margin: 0;
+    margin-left: 10px; /* Espacio entre la imagen y el texto */
 }
 
 .nav {
@@ -67,29 +67,26 @@ header {
 }
 
 .nav a:hover {
-    color: #000;
+    color: #388e3c; /* Cambio de color en hover */
+    text-decoration: underline;
 }
 
+/* Estilo del usuario post-registro */
 .usuario-info {
     display: flex;
     align-items: center;
-    gap: 10px;
-    background-color: #0C4F30; /* Contenedor verde */
+    background-color: #0C4F30;
     padding: 10px 20px;
     border-radius: 20px;
-}
-
-.user-container {
-    display: flex;
-    flex-direction: column;
-    text-align: right;
+    gap: 10px; /* Separación entre imagen y texto */
 }
 
 .usuario-info img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    margin-left: 10px;
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
 .usuario-info p {
@@ -166,12 +163,13 @@ footer {
 }
 
 footer img {
-    height: 50px;
+    height: 70px;
 }
 
 footer p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin: 10px 0;
+    color: white;
 }
 
 .linea-blanca {
