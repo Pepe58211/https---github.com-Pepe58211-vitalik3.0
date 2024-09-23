@@ -4,10 +4,10 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f0f0f0;
     color: #333;
-  }
-  
-  /* Ajustes del header */
-  header {
+}
+
+/* Ajustes del header */
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,45 +18,45 @@ body {
     width: 97%;
     top: 0;
     z-index: 100;
-  }
-  
-  .logo-section {
+}
+
+.logo-section {
     display: flex;
     align-items: center;
-  }
-  
-  .logo-section img {
+}
+
+.logo-section img {
     height: 80px;
-  }
-  
-  .logo-section p {
+}
+
+.logo-section p {
     color: #f0f0f0;
     font-size: 1.5rem;
-  }
-  
-  .nav {
+}
+
+.nav {
     display: flex;
-  }
-  
-  .nav a {
+}
+
+.nav a {
     color: white;
     font-size: 1.2rem;
     text-decoration: none;
     margin-left: 30px;
     transition: color 0.3s ease;
-  }
-  
-  .nav a:hover {
+}
+
+.nav a:hover {
     color: #388e3c;
     text-decoration: underline;
-  }
-  
-  .botones {
+}
+
+.botones {
     display: flex;
     gap: 10px;
-  }
-  
-  .boton {
+}
+
+.boton {
     padding: 10px 20px;
     text-align: center;
     background-color: #0C4F30;
@@ -64,18 +64,18 @@ body {
     color: white;
     text-decoration: none;
     transition: background-color 0.3s ease;
-  }
-  
-  .boton:hover {
+}
+
+.boton:hover {
     background-color: #6fa02e;
-  }
-  
-  main {
+}
+
+main {
     padding: 150px 20px; /* Ajuste para el header fijo */
-  }
-  
-  /* Estilos del Formulario de Iniciar Sesión */
-  .form-container {
+}
+
+/* Estilos del Formulario de Iniciar Sesión */
+.form-container {
     background-color: white;
     padding: 40px;
     border-radius: 15px;
@@ -84,27 +84,27 @@ body {
     width: 400px;
     margin: 40px auto;
     position: relative;
-  }
-  
-  .form-container h2 {
+}
+
+.form-container h2 {
     background-color: #8EC63F; /* Mismo color del header principal */
     color: white;
     padding: 15px;
     border-radius: 5px;
     margin-bottom: 25px;
-  }
-  
-  input[type="text"],
-  input[type="password"] {
+}
+
+input[type="text"],
+input[type="password"] {
     width: calc(100% - 30px); /* Ajustar margen interno */
     padding: 15px;
     margin: 10px 0;
     border-radius: 5px;
     border: 1px solid #ccc;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .submit-btn {
+}
+
+.submit-btn {
     background-color: #4caf50;
     color: white;
     padding: 15px;
@@ -113,13 +113,16 @@ body {
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
-  }
-  
-  .submit-btn:hover {
+    transition: background-color 0.3s ease;
+    margin-right: 2%;
+    margin-top: 10px; /* Ajuste de margen vertical */
+}
+
+.submit-btn:hover {
     background-color: #388e3c;
-  }
-  
-  .secondary-btn {
+}
+
+.secondary-btn {
     background-color: #ccc;
     color: black;
     padding: 15px;
@@ -128,50 +131,48 @@ body {
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
-  }
-  
-  .secondary-btn:hover {
+    text-align: center;
+    text-decoration: none; /* Eliminamos el subrayado */
+    margin-top: 10px; /* Ajuste de margen vertical */
+}
+
+.secondary-btn:hover {
     background-color: #bbb;
-  }
-  
-  .button-group {
+}
+
+.button-group {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-  }
-  
-  /* Se eliminó el logo inferior */
-  .form-logo {
-    display: none;
-  }
-  
-  /* Footer Principal */
-  footer {
+}
+
+/* Footer Principal */
+footer {
     background-color: #000;
     color: white;
     padding: 20px;
     text-align: center;
-  }
-  
-  footer img {
+}
+
+footer img {
     height: 70px;
     margin-bottom: 10px;
-  }
-  
-  .linea-blanca {
+}
+
+.linea-blanca {
     border-top: 5px solid #fff;
     margin: 20px auto;
     width: 30%;
-  }
-  
-  .footer-links a {
+}
+
+.footer-links a {
     display: inline-block;
     margin: 0 10px;
     color: #f0f0f0;
     text-decoration: none;
-  }
-  
-  .footer-links a:hover {
+}
+
+.footer-links a:hover {
     text-decoration: underline;
-  }
-  
+}
+
