@@ -16,7 +16,7 @@
         </div>
         <nav class="nav">
             <a href="servicios.html">Servicios</a>
-            <a href="contactos.html">Contacto</a>
+            <a href="contactosp.html">Contacto</a>
             <a href="planes.html">Plan</a>
         </nav>
         <div class="botones"> 
@@ -30,30 +30,27 @@
         <!-- Form Section -->
         <section class="form-section">
             <a href="#" class="back-button">← Regresar</a>
-            <form>
-                <input type="text" placeholder="Tipo de identificación">
-                <input type="text" placeholder="Documento de identificación">
-                <input type="text" placeholder="Nombre completo">
-                <input type="email" placeholder="E-mail">
-                <input type="date" placeholder="Fecha de nacimiento">
-                <input type="text" placeholder="Nombre de celular">
+            <form action="pagovitalik.html" method="GET">
+                <input type="text" placeholder="Tipo de identificación" required>
+                <input type="text" placeholder="Documento de identificación" required>
+                <input type="text" placeholder="Nombre completo" required>
+                <input type="email" placeholder="E-mail" required>
+                <input type="date" placeholder="Fecha de nacimiento" required>
+                <input type="text" placeholder="Número de celular" required>
 
                 <div class="checkbox-group">
                     <label>
-                        <input type="checkbox">
-                        Acepto recibir comunicaciones de Vitalik por e-mail.
+                        <input type="checkbox"> Acepto recibir comunicaciones de Vitalik por e-mail.
                     </label>
                     <label>
-                        <input type="checkbox">
-                        Acepto recibir comunicaciones de Vitalik por SMS.
+                        <input type="checkbox"> Acepto recibir comunicaciones de Vitalik por SMS.
                     </label>
                     <label>
-                        <input type="radio" name="data">
-                        Acepto el tratamiento de mis datos personales.
+                        <input type="radio" name="data" required> Acepto el tratamiento de mis datos personales.
                     </label>
                 </div>
 
-                <button class="submit-button">CONTINUAR</button>
+                <button type="submit" class="submit-button">CONTINUAR</button>
             </form>
         </section>
 
@@ -73,19 +70,24 @@
             <img src="imagenes/LogoVitalik.png" alt="Vitalik Logo">
             <p>VITALIK</p>
         </div>
-        <div class="linea-blanca"></div> <!-- Línea blanca entre logo y redes sociales -->
+        <div class="linea-blanca"></div>
         <div class="social">
             <a href="https://www.facebook.com" target="_blank">
                 <img src="imagenes/Facebook_Icon.png" alt="Facebook_Icon">
-                <i class="fa fa-facebook"></i>
             </a>
             <a href="https://www.instagram.com" target="_blank">
                 <img src="imagenes/Instagram_Icon.png" alt="Instagram_Icon">
-                <i class="fa fa-instagram"></i> 
             </a>
             <a href="tel:+573007756383" target="_blank">
                 <img src="imagenes/WhatsApp_Icon.png" alt="WhatsApp_Icon">
-                <i class="fa fa-whatsapp"></i> 
             </a>
         </div>
-        <div
+        <div class="linea-blanca"></div>
+        <div class="footer-links">
+            <a href="contactosp.html">Contáctenos</a>
+            <a href="sedesp.html">Ubicación</a>
+        </div>
+    </footer>
+
+</body>
+</html>
