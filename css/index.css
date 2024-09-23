@@ -239,16 +239,46 @@ footer {
   color: white;
   padding: 20px;
   text-align: center;
+  box-sizing: border-box;
 }
 
 footer img {
   height: 70px;
+  margin-bottom: 10px;
 }
 
+footer p {
+  font-size: 1.3rem;
+  margin: 10px 0;
+  color: white;
+}
+
+/* Líneas blancas */
 .linea-blanca {
   border-top: 5px solid #fff;
   margin: 20px auto;
   width: 30%;
+  align-items: center;
+}
+
+footer .social {
+  margin: 20px 0;
+  vertical-align: middle;
+}
+
+footer .social a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+footer .social img {
+  height: 30px;
+  vertical-align: 0;
+}
+
+/* Links del footer */
+.footer-links {
+  margin-top: 20px;
 }
 
 .footer-links a {
@@ -262,84 +292,10 @@ footer img {
   text-decoration: underline;
 }
 
-/* Media Queries */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 20px;
-  }
-
-  .logo-section img {
-    height: 60px;
-  }
-
-  .nav {
-    margin-top: 10px;
-    flex-direction: column;
-  }
-
-  .nav a {
-    margin-left: 0;
-    margin-top: 10px;
-  }
-
-  .botones {
-    margin-top: 10px;
-    flex-direction: column;
-    gap: 5px;
-  }
-
-  .hero-section h1 {
-    font-size: 2rem;
-  }
-
-  .image-container img {
-    max-width: 90%;
-  }
+.footer-content {
+  margin-bottom: 10px;
 }
 
-@media (max-width: 480px) {
-  header {
-    padding: 10px;
-  }
-
-  .logo-section p {
-    font-size: 1.2rem;
-  }
-
-  .nav a {
-    font-size: 1rem;
-  }
-
-  .botones .boton {
-    padding: 8px 15px;
-    font-size: 1rem;
-  }
-
-  .hero-section h1 {
-    font-size: 1.8rem;
-  }
-
-  .primary-btn, .secondary-btn {
-    padding: 10px 20px;
-    font-size: 1rem;
-  }
-
-  .image-container img {
-    max-width: 85%;
-  }
-}
-
-@media (max-width: 1024px) {
-  .trainers-section {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .trainers-section .trainers-image, 
-  .trainers-section .trainers-list {
-    flex: none;
-    max-width: 100%;
-  }
+.footer-links {
+  margin-top: 50px;
 }
