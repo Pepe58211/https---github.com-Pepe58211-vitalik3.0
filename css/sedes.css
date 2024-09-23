@@ -17,10 +17,10 @@ body {
 }
 
 /* Header Principal */
-.header-principal {
+header {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 97%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,28 +30,28 @@ body {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.header-principal .logo-section {
+header .logo-section {
   display: flex;
   align-items: center;
 }
 
-.header-principal .logo-section img {
+header .logo-section img {
   height: 80px;
   margin-right: 10px;
 }
 
-.header-principal p {
+header .logo-section p {
   font-size: 1.5rem;
   color: white;
-  font-weight: bold;
+  font-weight: s;
 }
 
-.header-principal .nav {
+header .nav {
   display: flex;
   align-items: center;
 }
 
-.header-principal .nav a {
+header .nav a {
   color: white;
   font-size: 1.2rem;
   text-decoration: none;
@@ -59,17 +59,17 @@ body {
   transition: color 0.3s ease;
 }
 
-.header-principal .nav a:hover {
+header .nav a:hover {
   color: #388e3c;
   text-decoration: underline;
 }
 
-.header-principal .botones {
+header .botones {
   display: flex;
   gap: 10px;
 }
 
-.header-principal .boton {
+header .boton {
   padding: 10px 20px;
   background-color: #0C4F30;
   border-radius: 10px;
@@ -78,13 +78,13 @@ body {
   transition: background-color 0.3s ease;
 }
 
-.header-principal .boton:hover {
+header .boton:hover {
   background-color: #6fa02e;
 }
 
 /* Ajustes de main */
 main {
-  padding: 120px 20px 40px;
+  padding: 150px 20px 40px;
   text-align: center;
 }
 
@@ -226,3 +226,4 @@ footer .footer-content, footer .footer-links {
 .footer-links {
   margin-top: 50px;
 }
+
