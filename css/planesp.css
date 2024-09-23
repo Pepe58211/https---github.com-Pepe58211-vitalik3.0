@@ -153,6 +153,54 @@ main {
     object-fit: cover;
 }
 
+/* Ventana Flotante */
+.ventana-flotante {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 9999;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.ventana-flotante img {
+    width: 100px;
+    margin: 10px 0;
+}
+
+.ventana-flotante p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* Fondo Oscuro */
+.fondo-oscuro {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+}
+
 /* Footer */
 footer {
     background-color: #000;
@@ -208,3 +256,4 @@ footer .social img {
 .footer-links a:hover {
     text-decoration: underline;
 }
+
