@@ -1,72 +1,214 @@
-/* Header fijo */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #8EC63F;
-    padding: 20px 40px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 97%;
-    z-index: 1000;
-    flex-wrap: wrap; /* Permitir que los elementos se ajusten en pantallas pequeñas */
+/* GENERAL */
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+  border-style: none;
+}
+
+/* WRAPPER */
+.hm-wrapper {
+  position: relative;
+  min-height: 100%;
+}
+
+/* HEADER PRINCIPAL */
+.hm-header {
+  position: fixed;
+  height: auto;
+  background-color: #8EC63F;
+  padding: 20px 40px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.hm-header .container {
+  height: 100%;
+}
+
+/* HEADER MENU */
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.header-logo img {
+  height: 80px; /* Tamaño del logo */
+}
+
+.text-logo h1 {
+  margin-left: 10px;
+  font-size: 1.5rem;
+  color: #f0f0f0;
+}
+
+.hm-menu {
+  display: flex;
+  justify-content: center; /* Centrar enlaces del menú */
+  align-items: center;
+  flex-grow: 1; /* Permite que el menú ocupe el espacio disponible */
+}
+
+.hm-menu ul {
+  display: flex;
+}
+
+.hm-menu ul li a {
+  color: white;
+  font-size: 1.2rem;
+  margin-right: 30px;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.hm-menu ul li a:hover {
+  color: #388e3c;
+  text-decoration: underline;
+}
+
+/* ICONO MENU MOVIL */
+.icon-menu {
+  display: none;
+}
+
+/* BOTONES */
+.botones {
+  display: flex;
+  gap: 10px;
+  margin-left: 50px; /* Aumenta este valor para crear espacio entre los botones y el último enlace ("Plan") */
+}
+
+.boton {
+  padding: 10px 20px;
+  text-align: center;
+  background-color: #0C4F30;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+  background-color: #6fa02e;
+}
+
+/* VERSION MOVIL */
+@media screen and (max-width: 900px) {
+  /* Ocultar menú de escritorio en móviles */
+  .hm-menu ul {
+    display: none;
   }
-  
-  .logo-section {
-    display: flex;
-    align-items: center;
+
+  /* Mantener el logo visible */
+  .header-logo img {
+    max-height: 50px; /* Ajustar el tamaño del logo en móvil */
   }
-  
-  .logo-section img {
-    height: 80px;
-    align-items: center;
-  }
-  
-  .logo-section p {
-    text-align: center;
-    color: #f0f0f0;
-    font-size: 1.5rem;
-  }
-  
-  .nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Centrar los enlaces si el espacio es pequeño */
-    align-items: center;
-  }
-  
-  .nav a {
-    color: white;
-    font-size: 1.2rem;
-    text-decoration: none;
-    margin-left: 30px;
-    transition: color 0.3s ease;
-  }
-  
-  .nav a:hover {
-    color: #388e3c;
-    text-decoration: underline;
-  }
-  
+
+  /* Ocultar los botones de "Iniciar Sesión" y "Registrarse" */
   .botones {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap; /* Permitir que los botones se ajusten en pantallas pequeñas */
+    display: none; /* Oculta los botones en móvil */
   }
-  
-  .boton {
-    padding: 10px 20px;
-    text-align: center;
-    background-color: #0C4F30;
-    border-radius: 10px;
-    color: white;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
+
+  /* Mostrar icono del menú móvil */
+  .icon-menu {
+    display: block;
+    margin-left: auto; /* Alinea el icono del menú a la derecha */
+    margin-right: 20px; /* Ajusta el espacio del lado derecho */
   }
-  
-  .boton:hover {
-    background-color: #6fa02e;
+
+  .icon-menu button {
+    background: transparent;
+    border: none;
+    font-size: 22px;
+    color: black;
   }
-  
+
+  /* HEADER MOVIL */
+  .header-menu-movil {
+    background-color: #5a8514;
+    position: fixed;
+    padding: 40px;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    transition: all .3s ease;
+    transform: translate(-100%);
+  }
+
+  .header-menu-movil.active {
+    transform: translate(0%);
+  }
+
+  .header-menu-movil .cerrar-menu {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    border: none;
+    background: #5d82219f;
+    font-size: 18px;
+    color: black;
+  }
+
+  .header-menu-movil ul li {
+    margin: 10px 0;
+  }
+
+  .header-menu-movil ul li a {
+    display: inline-block;
+    color: #fff;
+  }
+}
+
+/* ANIMACIÓN HEADER */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.header-menu-movil.active {
+  animation: fadeIn 0.3s ease-in;
+}
+
+.hm-logo {
+  display: flex; /* Esto alineará los elementos (logo y texto) en una fila */
+  align-items: center; /* Alinea verticalmente el texto con el logo */
+}
+
+.text-logo h1 {
+  font-size: 1.5rem;
+  color: white;
+  margin-left: 10px; /* Espacio entre el logo y el texto */
+}
+
