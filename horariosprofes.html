@@ -6,27 +6,50 @@
     <title>Horarios Profesores</title>
     <link rel="stylesheet" href="css/horariosprofes.css">
     <link rel="stylesheet" href="css/footergeneralPost.css">
+    <link rel="stylesheet" href="css/headerpost.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 </head>
 <body>
-    <!-- HEADER con Header Full -->
-    <header>
-        <div class="logo-section">
+    <header class="hm-header">
+        <div class="logo-section hm-logo">
+            <!-- Envolvemos el logo y el texto "VITALIK" en un solo enlace -->
             <a href="index_post.html">
                 <img src="imagenes/LogoVitalik.png" alt="Logo Vitalik">
+                <p>VITALIK</p> <!-- Texto "VITALIK" -->
             </a>
-            <p>VITALIK</p>
         </div>
-        <nav class="nav">
+        
+        <!-- Menú de navegación en pantallas grandes -->
+        <nav class="nav hm-menu">
             <a href="horarios2.html">Ver Horarios</a>
             <a href="contactosp.html">Contacto</a>
             <a href="planesp.html">Plan</a>
         </nav>
-        <div class="usuario-info">
+        
+        <!-- Sección de usuario (pantallas grandes) -->
+        <a href="usuariop.html" class="usuario-info">
             <div class="user-container">
                 <p>USUARIO R</p>
                 <p>Plan Vitalik Premium</p>
             </div>
             <img src="imagenes/imagen15.png" alt="Usuario">
+        </a>
+    
+        <!-- Ícono del menú móvil -->
+        <div class="icon-menu">
+            <button id="menu-toggle"><i class="fas fa-bars"></i></button>
+        </div>
+    
+        <!-- Menú móvil (pantallas pequeñas) -->
+        <div class="header-menu-movil" id="mobile-menu">
+            <button class="cerrar-menu" id="menu-close"><i class="fas fa-times"></i></button>
+            <ul>
+                <li><a href="horarios2.html">Ver Horarios</a></li>
+                <li><a href="contactosp.html">Contacto</a></li>
+                <li><a href="planesp.html">Plan</a></li>
+                <li><a href="usuariop.html">Ver Perfil</a></li> <!-- Botón de usuario en el menú móvil -->
+            </ul>
         </div>
     </header>
 
