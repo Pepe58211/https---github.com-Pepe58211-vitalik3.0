@@ -146,33 +146,3 @@ input[type="password"] {
     margin-bottom: 20px;
 }
 
-/* Footer Principal */
-footer {
-    background-color: #000;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-footer img {
-    height: 70px;
-    margin-bottom: 10px;
-}
-
-.linea-blanca {
-    border-top: 5px solid #fff;
-    margin: 20px auto;
-    width: 30%;
-}
-
-.footer-links a {
-    display: inline-block;
-    margin: 0 10px;
-    color: #f0f0f0;
-    text-decoration: none;
-}
-
-.footer-links a:hover {
-    text-decoration: underline;
-}
-
