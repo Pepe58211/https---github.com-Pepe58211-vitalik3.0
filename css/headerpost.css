@@ -1,0 +1,167 @@
+/* HEADER GENERAL */
+.hm-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8EC63F;
+    padding: 10px 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    height: 110px;
+}
+
+/* Logo section */
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo-section a {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Para evitar subrayado */
+}
+
+.logo-section img {
+    height: 80px; /* Se mantiene el tamaño original del logo */
+}
+
+.logo-section p {
+    font-size: 1.6rem;
+    color: white;
+    margin-left: 10px;
+    font-weight: bold; /* Aplica negrita a la palabra VITALIK */
+}
+
+/* Navigation menu (centrado en el header) */
+.hm-menu {
+    display: flex;
+    gap: 40px;
+    justify-content: center; /* Centramos el menú */
+    flex-grow: 1; /* Permite que el menú ocupe el espacio necesario */
+    align-items: center; /* Alineamos verticalmente */
+}
+
+.hm-menu a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 5px; /* Ajuste para evitar el fondo azul */
+}
+
+.hm-menu a:hover {
+    color: #388e3c;
+    text-decoration: underline;
+}
+
+/* User info section */
+.usuario-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #0C4F30;
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-decoration: none; /* Para evitar el subrayado del enlace */
+    position: relative; /* Para moverlo manualmente */
+    left: -40px; /* Mueve el botón 20px hacia la izquierda */
+    color: white; /* Asegura que el color del texto sea blanco */
+}
+
+.usuario-info p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: white;
+    white-space: nowrap;
+}
+
+.usuario-info img {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+/* Ocultar el ícono del menú en pantallas grandes */
+.icon-menu, .header-menu-movil {
+    display: none; /* Aseguramos que estos elementos no se muestren en pantallas grandes */
+}
+
+/* Estilos móviles */
+@media screen and (max-width: 900px) {
+    /* Ocultar el botón de usuario en pantallas pequeñas */
+    .usuario-info {
+        display: none; 
+    }
+
+    /* Mostrar el ícono del menú móvil */
+    .icon-menu {
+        display: block;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    .hm-menu {
+        display: none; /* Ocultar el menú en pantallas pequeñas */
+    }
+
+    .header-menu-movil.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #5a8514;
+        z-index: 1000;
+        padding: 40px;
+        transition: transform 0.3s ease;
+    }
+
+    .header-menu-movil ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .header-menu-movil ul li a {
+        color: white;
+        font-size: 1.2rem;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .header-menu-movil ul li a:hover {
+        color: #388e3c;
+        text-decoration: underline;
+    }
+
+    .header-menu-movil .cerrar-menu {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        border-radius: 50%;
+        border: none;
+        background: #5d82219f;
+        font-size: 18px;
+        color: black;
+    }
+}
+
+
+
+
+
+
+  
+
