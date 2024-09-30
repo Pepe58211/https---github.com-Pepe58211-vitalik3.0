@@ -9,7 +9,7 @@ window.addEventListener('scroll', () => {
     if (window.pageYOffset > 80) {
         headerMenu.classList.add('header-fixed');
     } else {
-        headerMenu.classList.remove('header-fixed');
+        headerMenu.classList.remove('header-fixed'); 
     }
 });
 
