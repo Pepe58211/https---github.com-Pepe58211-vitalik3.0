@@ -1,0 +1,93 @@
+/* Footer */
+footer {
+  background-color: #000;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+footer img {
+  height: 70px;
+  margin-bottom: 10px;
+  max-width: 100%; /* Asegura que la imagen no se expanda más allá del contenedor */
+  object-fit: contain; /* Mantiene las proporciones de la imagen */
+}
+
+footer p {
+  font-size: 1.3rem;
+  margin: 10px 0;
+  color: white;
+}
+
+/* Líneas blancas */
+.linea-blanca {
+  border-top: 5px solid #fff;
+  margin: 20px auto;
+  width: 30%;
+  align-items: center;
+}
+
+footer .social {
+  display: flex;
+  justify-content: center; /* Centra los íconos horizontalmente */
+  align-items: center; /* Centra verticalmente dentro del contenedor */
+  margin: 20px 0; /* Ajusta el margen para separación adecuada */
+}
+
+footer .social a {
+  display: inline-block;
+  margin: 0 15px;
+  text-align: center;
+  width: 40px; /* Tamaño fijo para los enlaces de redes sociales */
+}
+
+footer .social img {
+  height: 30px;
+  vertical-align: middle;
+}
+
+/* Links del footer */
+.footer-links {
+  margin-top: 20px;
+}
+
+.footer-links a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Agrega borde a las secciones */
+footer .footer-content, footer .footer-links {
+  margin: 10px 0;
+}
+
+/* Añadir líneas divisorias */
+.footer-content {
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  margin-top: 50px;
+}
+
+/* Ajustes en pantallas pequeñas */
+@media only screen and (max-width: 600px) {
+  footer img {
+      height: 50px; /* Ajusta el tamaño de las imágenes para pantallas pequeñas */
+  }
+  
+  footer .social img {
+      height: 25px; /* Ajusta el tamaño de los íconos de redes sociales */
+  }
+  
+  footer .social a {
+      margin: 0 5px; /* Reduce el espacio entre los íconos en pantallas pequeñas */
+  }
+}
