@@ -6,7 +6,6 @@ body {
     color: #333;
 }
 
-
 /* Estilos del Formulario de Iniciar Sesión */
 .form-container {
     background-color: white;
@@ -15,7 +14,7 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 400px;
-    margin: 40px auto;
+    margin: 80px auto; /* Se ajusta el margen superior */
     position: relative;
 }
 
@@ -78,4 +77,3 @@ input[type="password"] {
     justify-content: space-between;
     margin-bottom: 20px;
 }
-
