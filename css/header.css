@@ -57,6 +57,7 @@ img {
 .header-logo {
   display: flex;
   align-items: center;
+  flex-grow: 1; /* El logo ocupa espacio disponible en el lado izquierdo */
 }
 
 .header-logo img {
@@ -65,9 +66,8 @@ img {
 
 .hm-menu {
   display: flex;
-  justify-content: center; /* Centrar enlaces del menú */
-  align-items: center;
-  flex-grow: 1; /* Permite que el menú ocupe el espacio disponible */
+  justify-content: center; /* Centrar el menú */
+  flex-grow: 2; /* El menú ocupa espacio central entre el logo y los botones */
 }
 
 .hm-menu ul {
@@ -93,10 +93,18 @@ img {
   display: none;
 }
 
-/* BOTONES */
+/* CONTENEDOR BOTONES */
+.botones-container {
+  display: flex;
+  justify-content: flex-end; /* Alinea los botones a la derecha */
+  align-items: center;
+  margin-left: auto; /* Empuja los botones hacia el borde derecho */
+  flex-grow: 0; /* No permite que los botones ocupen espacio extra */
+}
+
 .botones {
   display: flex;
-  gap: 10px;
+  gap: 10px; /* Mayor espacio entre los botones */
   margin-left: auto; /* Empuja los botones hacia el borde derecho */
 }
 
@@ -104,11 +112,17 @@ img {
   padding: 10px 20px;
   text-align: center;
   background-color: #0C4F30;
-  border-radius: 10px;
+  border-radius: 15px;
   color: white;
   text-decoration: none;
   transition: background-color 0.3s ease;
+  margin-left: 10px; /* Espacio entre botones */
 }
+
+.boton:first-child {
+  margin-left: 0; /* Elimina el margen del primer botón */
+}
+
 
 .boton:hover {
   background-color: #6fa02e;
@@ -127,7 +141,7 @@ img {
   }
 
   /* Ocultar los botones de "Iniciar Sesión" y "Registrarse" */
-  .botones {
+  .botones-container {
     display: none; /* Oculta los botones en móvil */
   }
 
@@ -211,4 +225,5 @@ img {
   color: white;
   margin-left: 10px; /* Espacio entre el logo y el texto */
 }
+
 
