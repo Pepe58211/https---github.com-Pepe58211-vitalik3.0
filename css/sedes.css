@@ -16,71 +16,7 @@ body {
   color: #333;
 }
 
-/* Header Principal */
-header {
-  position: fixed;
-  top: 0;
-  width: 97%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #8EC63F;
-  padding: 20px 40px;
-  z-index: 1000;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
 
-header .logo-section {
-  display: flex;
-  align-items: center;
-}
-
-header .logo-section img {
-  height: 80px;
-  margin-right: 10px;
-}
-
-header .logo-section p {
-  font-size: 1.5rem;
-  color: white;
-  font-weight: s;
-}
-
-header .nav {
-  display: flex;
-  align-items: center;
-}
-
-header .nav a {
-  color: white;
-  font-size: 1.2rem;
-  text-decoration: none;
-  margin-left: 30px;
-  transition: color 0.3s ease;
-}
-
-header .nav a:hover {
-  color: #388e3c;
-  text-decoration: underline;
-}
-
-header .botones {
-  display: flex;
-  gap: 10px;
-}
-
-header .boton {
-  padding: 10px 20px;
-  background-color: #0C4F30;
-  border-radius: 10px;
-  color: white;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-header .boton:hover {
-  background-color: #6fa02e;
-}
 
 /* Ajustes de main */
 main {
