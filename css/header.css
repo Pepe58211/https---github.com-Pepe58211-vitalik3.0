@@ -40,7 +40,7 @@ img {
   top: 0;
   width: 100%;
   z-index: 1000;
-  overflow: hidden; /* Evita que contenido no deseado se desborde */
+  overflow: hidden;
 }
 
 .hm-header .container {
@@ -171,10 +171,27 @@ img {
     z-index: 1000;
     transition: all 0.3s ease;
     transform: translate(-100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .header-menu-movil.active {
     transform: translate(0%);
+  }
+
+  /* Ocultar los botones dentro del menú móvil por defecto */
+  .header-menu-movil ul li .boton {
+    display: none;
+  }
+
+  /* Mostrar los botones solo cuando el menú móvil esté activo */
+  .header-menu-movil.active ul li .boton {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
   }
 
   .header-menu-movil .cerrar-menu {
