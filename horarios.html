@@ -5,29 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horarios - Vitalik</title>
     <link rel="stylesheet" href="css/horarios.css">
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footergeneral.css">
-
+    <link rel="stylesheet" href="css/footergeneral.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 </head>
 <body>
+    <div class="hm-wrapper"></div>
+    <!-- HEADER MENU -->
+    <div class="hm-header">
+        <div class="container">
+            <div class="header-menu">
+                <!-- LOGO -->
+                <div class="hm-logo">
+                    <div class="header-logo">
+                        <a href="index.html">
+                            <img src="imagenes/LogoVitalik.png" alt="Logo Vitalik">
+                        </a>
+                    </div>
+                    <div class="text-logo">
+                        <h1>VITALIK</h1>
+                    </div>
+                </div>
 
-    <!-- Header Principal -->
-    <header>
-        <div class="logo-section">
-            <a href="index.html">
-                <img src="imagenes/LogoVitalik.png" alt="Logo Vitalik">
-            </a>
-            <p>VITALIK</p>
+                <!-- MENÚ DE NAVEGACIÓN -->
+                <nav class="hm-menu">
+                    <ul>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="contactos.html">Contacto</a></li>
+                        <li><a href="planes.html">Plan</a></li>
+                    </ul>
+                </nav>
+
+                <!-- BOTONES DE INICIAR SESIÓN Y REGISTRARSE -->
+                <div class="botones-container">
+                    <a href="iniciarsesion.html" class="boton" aria-label="Iniciar sesión en Vitalik">Iniciar Sesión</a>
+                    <a href="registro.html" class="boton" aria-label="Registrarse en Vitalik">Registrarse</a>
+                </div>
+
+                <!-- ICONO DEL MENÚ MOVIL -->
+                <div class="icon-menu">
+                    <button type="button"><i class="fas fa-bars"></i></button>
+                </div>
+            </div>
         </div>
-        <nav class="nav">
-            <a href="servicios.html">Servicios</a>
-            <a href="contactos.html">Contacto</a>
-            <a href="planes.html">Plan</a>
-        </nav>
-        <div class="botones"> 
-            <a href="iniciarsesion.html" class="boton" aria-label="Iniciar sesión en Vitalik">Iniciar Sesión</a>
-            <a href="registro.html" class="boton" aria-label="Registrarse en Vitalik">Registrarse</a>
-         </div>
-    </header>
+    </div>
+
+    <!-- HEADER MENU MÓVIL -->
+    <div class="header-menu-movil">
+        <button class="cerrar-menu"><i class="fas fa-times"></i></button>
+        <ul>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contactos.html">Contacto</a></li>
+            <li><a href="planes.html">Plan</a></li>
+            <li><a href="iniciarsesion.html" class="boton" aria-label="Iniciar sesión en Vitalik">Iniciar Sesión</a></li>
+            <li><a href="registro.html" class="boton" aria-label="Registrarse en Vitalik">Registrarse</a></li>
+        </ul>
+    </div>
+
+</div>
+
+
+
 
     <!-- Main Content -->
     <main>
@@ -96,6 +136,6 @@
             <a href="sedes.html">Ubicación</a>
         </div>
     </footer>
-
+    <script src="Js/header.js"></script>
 </body>
 </html>
