@@ -6,37 +6,56 @@
     <title>Planes - Vitalik</title>
     <link rel="stylesheet" href="css/planesp.css">
     <link rel="stylesheet" href="css/footergeneralPost.css">
+    <link rel="stylesheet" href="css/headerpost.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 </head>
 <body>
-
-    <!-- Header Full -->
-    <header>
-        <div class="logo-section">
+    <header class="hm-header">
+        <div class="logo-section hm-logo">
+            <!-- Envolvemos el logo y el texto "VITALIK" en un solo enlace -->
             <a href="index_post.html">
                 <img src="imagenes/LogoVitalik.png" alt="Logo Vitalik">
+                <p>VITALIK</p> <!-- Texto "VITALIK" -->
             </a>
-            <p>VITALIK</p>
         </div>
-        <nav class="nav">
+        
+        <!-- Menú de navegación en pantallas grandes -->
+        <nav class="nav hm-menu">
             <a href="horarios2.html">Ver Horarios</a>
             <a href="contactosp.html">Contacto</a>
             <a href="planesp.html">Plan</a>
         </nav>
-        <div class="usuario-info">
+        
+        <!-- Sección de usuario (pantallas grandes) -->
+        <a href="usuariop.html" class="usuario-info">
             <div class="user-container">
                 <p>USUARIO R</p>
                 <p>Plan Vitalik Premium</p>
             </div>
             <img src="imagenes/imagen15.png" alt="Usuario">
+        </a>
+    
+        <!-- Ícono del menú móvil -->
+        <div class="icon-menu">
+            <button id="menu-toggle"><i class="fas fa-bars"></i></button>
+        </div>
+    
+        <!-- Menú móvil (pantallas pequeñas) -->
+        <div class="header-menu-movil" id="mobile-menu">
+            <button class="cerrar-menu" id="menu-close"><i class="fas fa-times"></i></button>
+            <ul>
+                <li><a href="horarios2.html">Ver Horarios</a></li>
+                <li><a href="contactosp.html">Contacto</a></li>
+                <li><a href="planesp.html">Plan</a></li>
+                <li><a href="usuariop.html">Ver Perfil</a></li> <!-- Botón de usuario en el menú móvil -->
+            </ul>
         </div>
     </header>
 
     <!-- Main Content -->
     <main>
         <section class="hero-section">
-            <figure class="image-container">
-                <img src="imagenes/imagen3.jpg" alt="Fondo Planes">
-            </figure>
             <div class="hero-text">
                 <p>¡Gracias por elegirnos como parte de tu camino hacia una vida más saludable y activa! Esperamos que hayas disfrutado de cada entrenamiento y logrado tus objetivos. Recuerda que siempre estaremos aquí para apoyarte en tu bienestar. ¡Vuelve pronto, sigue fuerte y mantén la motivación en alto! 💪</p>
                 <a href="#" class="cancel-btn" id="cancelarSubscripcion">Anular Subscripción</a>
@@ -46,7 +65,6 @@
 
     <!-- Ventana Flotante -->
     <div class="ventana-flotante" id="ventanaFlotante">
-        <button class="cerrar" id="cerrarVentana">X</button>
         <p>Su subscripción ha sido anulada correctamente</p>
         <img src="imagenes/LogoVitalik.png" alt="Logo">
     </div>
@@ -80,6 +98,7 @@
     </footer>
 
     <script src="js/planesp.js"></script>
+    <script src="js/horarios2.js"></script>
 </body>
 </html>
 

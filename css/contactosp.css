@@ -32,77 +32,7 @@ body {
   font-family: 'Arial', sans-serif;
   background-color: #f0f0f0;
   color: #333;
-  padding-top: 90px; /* Para dar espacio al header fijo */
-}
-
-/* Ajustes del header */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #8EC63F;
-  padding: 20px 40px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  width: 97%;
-  top: 0;
-  z-index: 1000;
-}
-
-.logo-section {
-  display: flex;
-  align-items: center;
-}
-
-.logo-section img {
-  height: 80px;
-}
-
-.logo-section p {
-  text-align: center;
-  color: #f0f0f0;
-  font-size: 1.5rem;
-}
-
-.nav {
-  display: flex;
-  align-items: left;
-}
-
-.nav a {
-  color: white;
-  font-size: 1.2rem;
-  text-decoration: none;
-  margin-left: 30px;
-  transition: color 0.3s ease;
-}
-
-.nav a:hover {
-  color: #388e3c; /* Cambio de color en hover */
-  text-decoration: underline;
-}
-
-/* Estilo del usuario post-registro */
-.usuario-info {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background-color: #0C4F30;
-  padding: 10px 20px;
-  border-radius: 10px;
-}
-
-.usuario-info p {
-  margin: 0;
-  color: #fff;
-}
-
-.usuario-info img {
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  border: 2px solid #fff;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  padding-top: 0px; /* Para dar espacio al header fijo */
 }
 
 /* Main Content */

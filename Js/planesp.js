@@ -13,8 +13,3 @@ document.getElementById("cancelarSubscripcion").addEventListener("click", functi
     }, 3000);
 });
 
-// Botón para cerrar la ventana manualmente
-document.getElementById("cerrarVentana").addEventListener("click", function () {
-    document.getElementById("ventanaFlotante").style.display = "none";
-    document.getElementById("fondoOscuro").style.display = "none";
-});
