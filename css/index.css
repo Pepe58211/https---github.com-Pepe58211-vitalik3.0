@@ -87,12 +87,13 @@ main {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
+  padding: 10px; /* Reducido para pantallas pequeñas */
   border-radius: 10px;
+  max-width: 90%; /* Asegura que el texto no ocupe más espacio del necesario */
 }
 
 .hero-section h1 {
-  font-size: 2.5rem;
+  font-size: 2rem; /* Ajuste del tamaño del texto */
   margin: 0;
 }
 
@@ -104,15 +105,18 @@ main {
 
 .buttons {
   margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 .primary-btn, .secondary-btn {
   display: inline-block;
-  padding: 15px 30px;
+  padding: 10px 20px; /* Ajustado para pantallas pequeñas */
   text-align: center;
   text-decoration: none;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1rem; /* Tamaño de fuente ajustado */
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
@@ -126,7 +130,7 @@ main {
 }
 
 .bordered-btn {
-  border: 3px solid #8EC63F;
+  border: 2px solid #8EC63F; /* Borde reducido */
   color: #000;
   background-color: #fff;
 }
@@ -231,4 +235,29 @@ main {
   padding: 10px 20px;
   background-color: rgba(142, 198, 63, 0.8);
   border-radius: 10px;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media only screen and (max-width: 768px) {
+    .hero-section .hero-text {
+        top: 50%; /* Mantiene la posición del texto */
+        padding: 5px; /* Reducir más el padding */
+        font-size: 1rem; /* Tamaño de fuente más pequeño */
+        max-width: 80%; /* Limita el ancho de la caja de texto */
+    }
+
+    .hero-section h1 {
+        font-size: 1.2rem; /* Reduce el tamaño del texto */
+    }
+
+    .buttons {
+        flex-direction: column; /* Coloca los botones uno debajo del otro */
+        gap: 10px; /* Espacio entre los botones */
+        margin-top: 10px; /* Ajusta el espacio superior */
+    }
+
+    .primary-btn, .secondary-btn {
+        width: 100%; /* Asegura que los botones se adapten al ancho disponible */
+        font-size: 0.9rem; /* Ajuste del tamaño del texto en los botones */
+    }
 }
