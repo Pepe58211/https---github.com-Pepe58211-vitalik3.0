@@ -40,6 +40,7 @@ img {
   top: 0;
   width: 100%;
   z-index: 1000;
+  overflow: hidden; /* Evita que contenido no deseado se desborde */
 }
 
 .hm-header .container {
@@ -52,28 +53,29 @@ img {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  overflow: hidden;
 }
 
 .header-logo {
   display: flex;
   align-items: center;
-  flex-grow: 1; /* El logo ocupa espacio disponible en el lado izquierdo */
+  flex-grow: 1;
 }
 
 .header-logo img {
-  height: 80px; /* Tamaño del logo */
+  height: 80px;
 }
 
 .hm-menu {
   display: flex;
-  justify-content: center; /* Centrar el menú */
-  flex-grow: 2; /* El menú ocupa espacio central entre el logo y los botones */
+  justify-content: center;
+  flex-grow: 2;
 }
 
 .hm-menu ul {
   display: flex;
   justify-content: center;
-  gap: 30px; /* Espacio entre los enlaces */
+  gap: 30px;
 }
 
 .hm-menu ul li a {
@@ -88,24 +90,19 @@ img {
   text-decoration: underline;
 }
 
-/* ICONO MENU MOVIL */
-.icon-menu {
-  display: none;
-}
-
-/* CONTENEDOR BOTONES */
+/* BOTONES */
 .botones-container {
   display: flex;
-  justify-content: flex-end; /* Alinea los botones a la derecha */
+  justify-content: flex-end;
   align-items: center;
-  margin-left: auto; /* Empuja los botones hacia el borde derecho */
-  flex-grow: 0; /* No permite que los botones ocupen espacio extra */
+  margin-left: auto;
+  flex-grow: 0;
 }
 
 .botones {
   display: flex;
-  gap: 10px; /* Mayor espacio entre los botones */
-  margin-left: auto; /* Empuja los botones hacia el borde derecho */
+  gap: 10px;
+  margin-left: auto;
 }
 
 .boton {
@@ -116,40 +113,43 @@ img {
   color: white;
   text-decoration: none;
   transition: background-color 0.3s ease;
-  margin-left: 10px; /* Espacio entre botones */
+  margin-left: 10px;
 }
 
 .boton:first-child {
-  margin-left: 0; /* Elimina el margen del primer botón */
+  margin-left: 0;
 }
-
 
 .boton:hover {
   background-color: #6fa02e;
 }
 
-/* VERSION MOVIL */
+/* ICONO MENU MOVIL */
+.icon-menu {
+  display: none; /* Ocultar en pantallas grandes */
+}
+
 @media screen and (max-width: 900px) {
-  /* Ocultar menú de escritorio en móviles */
+  /* Mostrar menú móvil solo en pantallas pequeñas */
   .hm-menu ul {
     display: none;
   }
 
-  /* Mantener el logo visible */
+  /* Ajustar tamaño del logo en pantallas pequeñas */
   .header-logo img {
-    max-height: 50px; /* Ajustar el tamaño del logo en móvil */
+    max-height: 50px;
   }
 
-  /* Ocultar los botones de "Iniciar Sesión" y "Registrarse" */
+  /* Ocultar los botones de sesión en pantallas pequeñas */
   .botones-container {
-    display: none; /* Oculta los botones en móvil */
+    display: none;
   }
 
-  /* Mostrar icono del menú móvil */
+  /* Mostrar icono del menú móvil en pantallas pequeñas */
   .icon-menu {
     display: block;
-    margin-left: auto; /* Alinea el icono del menú a la derecha */
-    margin-right: 20px; /* Ajusta el espacio del lado derecho */
+    margin-left: auto;
+    margin-right: 20px;
   }
 
   .icon-menu button {
@@ -159,7 +159,7 @@ img {
     color: black;
   }
 
-  /* HEADER MOVIL */
+  /* Menú móvil */
   .header-menu-movil {
     background-color: #5a8514;
     position: fixed;
@@ -169,7 +169,7 @@ img {
     width: 100%;
     height: 100vh;
     z-index: 1000;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     transform: translate(-100%);
   }
 
@@ -216,14 +216,13 @@ img {
 }
 
 .hm-logo {
-  display: flex; /* Esto alineará los elementos (logo y texto) en una fila */
-  align-items: center; /* Alinea verticalmente el texto con el logo */
+  display: flex;
+  align-items: center;
 }
 
 .text-logo h1 {
   font-size: 1.5rem;
   color: white;
-  margin-left: 10px; /* Espacio entre el logo y el texto */
+  margin-left: 10px;
 }
-
 

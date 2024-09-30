@@ -41,7 +41,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #8EC63F;
-  padding: 20px 40px;
+  padding: 10px 40px; /* Reducir el padding del header */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
@@ -112,7 +112,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 150px 20px 40px; /* Ajuste para compensar el header fijo */
+  padding: 80px 20px 20px; /* Reducir aún más el padding superior */
 }
 
 /* Sección de contacto organizada en dos columnas */
@@ -194,4 +194,10 @@ main {
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+/* Ajustar el padding del footer si es necesario */
+footer {
+  padding: 10px 40px; /* Asegurarse de que el footer tenga menos padding */
+}
+
 
