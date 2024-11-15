@@ -7,10 +7,8 @@
     <link rel="stylesheet" href="css/iniciarsesion.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footergeneral.css">
-    <link rel="stylesheet" href="css/footergeneral.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-
 </head>
 <body>
 
@@ -65,18 +63,16 @@
         </ul>
     </div>
 
-</div>
-
-<div class="hm-wrapper"></div>
+    <div class="hm-wrapper"></div>
 
     <!-- Main Content (Formulario de Iniciar Sesión) -->
     <main>
         <section class="form-container">
             <h2>INICIAR SESIÓN</h2>
-            <!-- Formulario actualizado con action que redirige a index_post.html -->
-            <form action="index_post.html" method="GET">
-                <input type="text" placeholder="Nombre de Usuario" required>
-                <input type="password" placeholder="Contraseña" required>
+            <!-- Formulario actualizado para enviar datos a login.php en InfinityFree -->
+            <form action="https://vitalik.42web.io/login.php" method="post">
+                <input type="text" name="email" placeholder="Correo Electrónico" required>
+                <input type="password" name="password" placeholder="Contraseña" required>
                 <div class="button-group">
                     <input type="submit" value="Iniciar Sesión" class="submit-btn">
                     <a href="olvidecontraseña.html" class="secondary-btn">Olvidé mi contraseña</a>
