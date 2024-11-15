@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="css/usuariop.css">
+    <link rel="stylesheet" href="css/footergeneralPost.css">
+    <link rel="stylesheet" href="css/headerpost.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+</head>
+<body>
+    <header class="hm-header">
+        <div class="logo-section hm-logo">
+            <!-- Envolvemos el logo y el texto "VITALIK" en un solo enlace -->
+            <a href="index_post.html">
+                <img src="imagenes/LogoVitalik.png" alt="Logo Vitalik">
+                <p>VITALIK</p> <!-- Texto "VITALIK" -->
+            </a>
+        </div>
+        
+        <!-- Menú de navegación en pantallas grandes -->
+        <nav class="nav hm-menu">
+            <a href="horarios2.html">Ver Horarios</a>
+            <a href="contactosp.html">Contacto</a>
+            <a href="planesp.html">Plan</a>
+        </nav>
+        
+        <!-- Sección de usuario (pantallas grandes) -->
+        <a href="usuariop.html" class="usuario-info">
+            <div class="user-container">
+                <p>USUARIO R</p>
+                <p>Plan Vitalik Premium</p>
+            </div>
+            <img src="imagenes/imagen15.png" alt="Usuario">
+        </a>
+    
+        <!-- Ícono del menú móvil -->
+        <div class="icon-menu">
+            <button id="menu-toggle"><i class="fas fa-bars"></i></button>
+        </div>
+    
+        <!-- Menú móvil (pantallas pequeñas) -->
+        <div class="header-menu-movil" id="mobile-menu">
+            <button class="cerrar-menu" id="menu-close"><i class="fas fa-times"></i></button>
+            <ul>
+                <li><a href="horarios2.html">Ver Horarios</a></li>
+                <li><a href="contactosp.html">Contacto</a></li>
+                <li><a href="planesp.html">Plan</a></li>
+                <li><a href="usuariop.html">Ver Perfil</a></li> <!-- Botón de usuario en el menú móvil -->
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="profile-container">
+        <section class="profile-card">
+            <img src="imagenes/LogoVitalik.png" alt="Logo Vitalik" class="logo">
+            <div class="user-info">
+                <h3>@UsuarioR</h3>
+                <p>Juan Rodriguez</p>
+                <p>JuanR@gmail.com</p>
+                <img src="imagenes/imagen15.png" alt="Usuario" class="profile-picture">
+            </div>
+            <div class="user-details">
+                <p><i class="icon-location"></i> Ubicado en Bogotá, Colombia</p>
+                <p><i class="icon-calendar"></i> Se unió en Septiembre de 2024</p>
+            </div>
+            <div class="plan-info">
+                <p>Plan Premium</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <img src="imagenes/LogoVitalik.png" alt="Vitalik Logo">
+            <p>VITALIK</p>
+        </div>
+        <div class="linea-blanca"></div> <!-- Línea blanca entre logo y redes sociales -->
+        <div class="social">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="imagenes/Facebook_Icon.png" alt="Facebook_Icon">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="imagenes/Instagram_Icon.png" alt="Instagram_Icon">
+                <i class="fa fa-instagram"></i> 
+            </a>
+            <a href="tel:+573007756383" target="_blank">
+                <img src="imagenes/WhatsApp_Icon.png" alt="WhatsApp_Icon">
+                <i class="fa fa-whatsapp"></i> 
+            </a>
+        </div>
+        <div class="linea-blanca"></div> <!-- Línea blanca entre redes sociales y links -->
+        <div class="footer-links">
+            <a href="contactos.html">Contáctenos</a>
+            <a href="sedes.html">Ubicación</a>
+        </div>
+    </footer>
+    <script src="js/headerpost.js"></script>
+</body>
+</html>

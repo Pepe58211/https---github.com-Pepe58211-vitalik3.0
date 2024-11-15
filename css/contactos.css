@@ -1,0 +1,133 @@
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav {
+    margin-top: 10px;
+  }
+
+  .contact-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-info, .contact-image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contact-image img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contact-info h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+
+
+/* Main Content */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 20px 20px; /* Reducir aún más el padding superior */
+}
+
+/* Sección de contacto organizada en dos columnas */
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 20px; /* Reducir el margen superior */
+}
+
+.contact-info {
+  width: 50%;
+  margin-right: 20px; /* Separación entre texto y la imagen */
+}
+
+.contact-info h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.contact-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Mejoramos los botones */
+.contact-buttons button {
+  background-color: #388e3c; /* Color verde inicial */
+  color: white; /* Texto en blanco */
+  padding: 15px 25px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex; /* Cambiamos a display flex para alinear el ícono y el texto */
+  justify-content: flex-start; /* Alinea el texto e ícono al inicio */
+  align-items: center; /* Centra verticalmente ícono y texto */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  width: 100%; /* Hacer que el botón ocupe todo el ancho */
+}
+
+.contact-buttons button:hover {
+  background-color: #8EC63F; /* Mismo color del header */
+  transform: translateY(-2px);
+}
+
+/* Icono dentro del botón */
+.contact-buttons button img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+/* Hacer clic en todo el botón */
+.contact-buttons button a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* Imagen de contacto */
+.contact-image {
+  width: 40%;
+}
+
+.contact-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajustar el padding del footer si es necesario */
+footer {
+  padding: 10px 40px; /* Asegurarse de que el footer tenga menos padding */
+}
+
+

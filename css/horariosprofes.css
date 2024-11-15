@@ -1,0 +1,133 @@
+/* Global Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav {
+        margin-top: 10px;
+    }
+    .usuario-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .usuario-info .user-container {
+        margin-top: 10px;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    padding-top: 90px; /* Espacio para header fijo */
+}
+
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+.horarios-section {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.horarios-section h2 {
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #000;
+    display: inline-block;
+}
+
+.horarios-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.horario-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8EC63F;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.horario-row .day {
+    font-weight: bold;
+    color: white;
+    flex: 1;
+}
+
+.horario-row .time {
+    display: inline-block;
+    padding: 10px;
+    background-color: #6fa02e;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-left: 5px;
+    flex: 1;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.horario-row .time:hover {
+    background-color: #4caf50;
+}
+
+.horario-row .time.selected {
+    background-color: #dfdbdb; /* Color para "No disponible" */
+    border: 2px solid #6fa02e;
+}
+
+/* Modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #8EC63F;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content img {
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+.modal-content p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+

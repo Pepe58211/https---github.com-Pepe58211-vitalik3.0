@@ -1,0 +1,92 @@
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav {
+    margin-top: 10px;
+  }
+}
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+
+
+/* Ajustes de main */
+main {
+  padding: 150px 20px 40px;
+  text-align: center;
+}
+
+/* City Section */
+.city-section {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  color: white;
+  text-align: center;
+  background-attachment: fixed; /* Efecto parallax */
+}
+
+.city-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 15px;
+  position: relative;
+  display: inline-block;
+  width: 80%;
+  max-width: 800px;
+}
+
+.city-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.city-info {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.city-image {
+  margin-top: 20px;
+}
+
+.city-image img {
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de la línea separadora */
+.section-divider {
+  border: none;
+  height: 2px;
+  background-color: white;
+  margin: 40px 0;
+  width: 80%;
+  max-width: 1200px;
+  opacity: 0.8; /* Ligera transparencia para suavizar el efecto */
+}
+
+@media (max-width: 768px) {
+  .city-content {
+    width: 90%;
+  }
+  
+  .city-image img {
+    width: 100%;
+  }
+  
+  .section-divider {
+    width: 90%; /* Ajuste de la línea para pantallas pequeñas */
+  }
+}
+

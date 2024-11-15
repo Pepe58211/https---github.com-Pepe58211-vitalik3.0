@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horarios - Vitalik</title>
-    <link rel="stylesheet" href="css/horarios.css">
+    <title>Plan Vitalik</title>
+    <link rel="stylesheet" href="css/planvitalik.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footergeneral.css">
     <link rel="stylesheet" href="css/footergeneral.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
 </head>
 <body>
     <div class="hm-wrapper"></div>
@@ -71,41 +72,40 @@
 
     <!-- Main Content -->
     <main>
-        <!-- Horarios Bogotá Section -->
-        <section class="city-schedule">
-            <h2 class="city-title">Bogotá</h2>
-            <div class="city-schedule-info">
-                <div class="schedule-box">
-                    <h3><i class="fa fa-clock"></i> Horario</h3>
-                    <p>Lun a Jue: 5h - 22h</p>
-                    <p>Vie: 5h - 21h</p>
-                    <p>Sáb: 7h - 17h</p>
-                    <p>Dom/Festivo: 8h - 17h</p>
+        <!-- Form Section -->
+        <section class="form-section">
+            <a href="#" class="back-button">← Regresar</a>
+            <form action="pagovitalik.html" method="GET">
+                <input type="text" placeholder="Tipo de identificación" required>
+                <input type="text" placeholder="Documento de identificación" required>
+                <input type="text" placeholder="Nombre completo" required>
+                <input type="email" placeholder="E-mail" required>
+                <input type="date" placeholder="Fecha de nacimiento" required>
+                <input type="text" placeholder="Número de celular" required>
+
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox"> Acepto recibir comunicaciones de Vitalik por e-mail.
+                    </label>
+                    <label>
+                        <input type="checkbox"> Acepto recibir comunicaciones de Vitalik por SMS.
+                    </label>
+                    <label>
+                        <input type="radio" name="data" required> Acepto el tratamiento de mis datos personales.
+                    </label>
                 </div>
-                <div class="city-image">
-                    <img src="imagenes/imagen9.jpg" alt="Gimnasio en Bogotá">
-                </div>
-            </div>
+
+                <button type="submit" class="submit-button">CONTINUAR</button>
+            </form>
         </section>
 
-        <!-- Línea separadora -->
-        <hr class="section-divider">
-
-        <!-- Horarios Medellín Section -->
-        <section class="city-schedule">
-            <h2 class="city-title">Medellín</h2>
-            <div class="city-schedule-info">
-                <div class="city-image">
-                    <img src="imagenes/imagen7.jpg" alt="Gimnasio en Medellín">
-                </div>
-                <div class="schedule-box">
-                    <h3><i class="fa fa-clock"></i> Horario</h3>
-                    <p>Lun a Jue: 5h - 22h</p>
-                    <p>Vie: 5h - 21h</p>
-                    <p>Sáb: 7h - 17h</p>
-                    <p>Dom/Festivo: 8h - 17h</p>
-                </div>
-            </div>
+        <!-- Plan Details Section -->
+        <section class="plan-details">
+            <h2>Plan Vitalik</h2>
+            <p>1ra. Mensualidad <span>$80.000</span></p>
+            <p>Inscripción <span>$0.0</span></p>
+            <hr>
+            <p>Servicios <span>$0.0</span></p>
         </section>
     </main>
 
@@ -115,25 +115,22 @@
             <img src="imagenes/LogoVitalik.png" alt="Vitalik Logo">
             <p>VITALIK</p>
         </div>
-        <div class="linea-blanca"></div> <!-- Línea blanca entre logo y redes sociales -->
+        <div class="linea-blanca"></div>
         <div class="social">
             <a href="https://www.facebook.com" target="_blank">
                 <img src="imagenes/Facebook_Icon.png" alt="Facebook_Icon">
-                <i class="fa fa-facebook"></i>
             </a>
             <a href="https://www.instagram.com" target="_blank">
                 <img src="imagenes/Instagram_Icon.png" alt="Instagram_Icon">
-                <i class="fa fa-instagram"></i> 
             </a>
             <a href="tel:+573007756383" target="_blank">
                 <img src="imagenes/WhatsApp_Icon.png" alt="WhatsApp_Icon">
-                <i class="fa fa-whatsapp"></i> 
             </a>
         </div>
-        <div class="linea-blanca"></div> <!-- Línea blanca entre redes sociales y links -->
+        <div class="linea-blanca"></div>
         <div class="footer-links">
-            <a href="contactos.html">Contáctenos</a>
-            <a href="sedes.html">Ubicación</a>
+            <a href="contactosp.html">Contáctenos</a>
+            <a href="sedesp.html">Ubicación</a>
         </div>
     </footer>
     <script src="Js/header.js"></script>

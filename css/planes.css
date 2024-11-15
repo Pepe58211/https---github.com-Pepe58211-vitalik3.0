@@ -1,0 +1,104 @@
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav {
+    margin-top: 10px;
+  }
+}
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+
+
+/* Main Content */
+main {
+  padding: 150px 20px 40px; /* Espaciado ajustado para evitar el header fijo */
+  text-align: center;
+}
+
+/* Plan Styles */
+.plan {
+  position: relative;
+  margin-bottom: 40px;
+  border-radius: 15px;
+  overflow: hidden; /* Para que las esquinas de la imagen se adapten */
+}
+
+.background-image img {
+  width: 100%;
+  height: auto;
+}
+
+.plan-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+}
+
+.plan-header {
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.plan-header.free {
+  background-color: rgba(124, 192, 75, 0.9);
+}
+
+.plan-header.premium {
+  background-color: rgba(76, 175, 80, 0.9);
+}
+
+.plan h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.plan ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.plan ul li {
+  margin-bottom: 10px;
+}
+
+.cta-button {
+  background-color: #388e3c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  text-decoration: none; /* Para que sea un enlace funcional */
+  display: inline-block; /* Para que se comporte como un botón */
+  align-self: center; /* Centrado debajo del texto */
+}
+
+.cta-button:hover {
+  background-color: #6fa02e;
+}
+
+/* Línea divisoria */
+.linea-blanca {
+  border-top: 3px solid #fff;
+  margin: 20px 0;
+}
+

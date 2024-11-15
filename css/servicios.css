@@ -1,0 +1,116 @@
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav {
+    margin-top: 10px;
+  }
+}
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    background-color: #555; /* Mantiene el color gris */
+    height: 300px; /* Ajuste de altura */
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    margin-top: 80px; /* Ajuste para compensar el header fijo */
+}
+
+/* Imagen de fondo */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4; /* Aumentamos la opacidad de la imagen de fondo */
+    z-index: 1; /* Detrás del texto */
+}
+
+/* Texto centrado vertical y horizontalmente */
+.hero-text {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%); /* Centra el texto verticalmente */
+    background-color: rgba(0, 0, 0, 0.6); /* Aumenta la opacidad del fondo del texto */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Main Content */
+main {
+  padding: 120px 20px 40px;
+}
+
+.service {
+  margin-bottom: 40px;
+}
+
+.service-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-text {
+  width: 55%;
+}
+
+.service-content img {
+  width: 40%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.service-content p {
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+/* Call to Action Button */
+.cta-button {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.button-link {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #388e3c;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.button-link:hover {
+  background-color: #8EC63F;
+}
+

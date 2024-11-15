@@ -1,0 +1,79 @@
+/* Estilos Generales */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Estilos del Formulario de Iniciar Sesión */
+.form-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+    margin: 80px auto; /* Se ajusta el margen superior */
+    position: relative;
+}
+
+.form-container h2 {
+    background-color: #8EC63F; /* Mismo color del header principal */
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 30px); /* Ajustar margen interno */
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.submit-btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 15px;
+    width: 48%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 2%;
+    margin-top: 10px; /* Ajuste de margen vertical */
+}
+
+.submit-btn:hover {
+    background-color: #388e3c;
+}
+
+.secondary-btn {
+    background-color: #ccc;
+    color: black;
+    padding: 15px;
+    width: 48%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none; /* Eliminamos el subrayado */
+    margin-top: 10px; /* Ajuste de margen vertical */
+}
+
+.secondary-btn:hover {
+    background-color: #bbb;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}

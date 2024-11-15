@@ -1,0 +1,168 @@
+@media (max-width: 768px) {
+  header {
+      flex-direction: column;
+      align-items: center;
+  }
+  .nav {
+      margin-top: 10px;
+  }
+}
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+
+/* Main Content */
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 120px 40px; /* Espacio superior para evitar superposición con el header */
+}
+
+/* Form Section */
+.form-section {
+  width: 55%;
+  background-color: white;
+  padding: 30px;
+  margin-right: 20px; /* Ajuste para el margen derecho */
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.form-section p {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="datetime"] {
+  width: calc(100% - 40px); /* Ajusta el ancho para que tenga espacio en ambos lados */
+  padding: 10px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+  font-size: 1.3rem;
+  margin: 20px 0 10px;
+  margin-left: 20px;
+}
+
+.checkbox-group {
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.checkbox-group label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.submit-button {
+  display: block;
+  width: calc(100% - 40px);
+  padding: 15px;
+  background-color: #8EC63F;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.submit-button:hover {
+  background-color: #6fa02e;
+}
+
+/* Plan Details */
+.plan-details {
+  width: 35%;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.plan-details h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.plan-details p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.plan-details hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+.total {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Ventana Flotante */
+.ventana-flotante {
+  display: none; /* Oculta inicialmente */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #8EC63F;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  z-index: 9999;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ventana-flotante img {
+  width: 100px;
+  margin: 10px 0;
+}
+
+.ventana-flotante p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.ventana-flotante hr {
+  border-top: 1px solid white;
+  margin: 20px 0;
+}
+
+/* Fondo Oscuro */
+.fondo-oscuro {
+  display: none; /* Oculto inicialmente */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9998; /* Debajo de la ventana flotante */
+}
+

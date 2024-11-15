@@ -1,15 +1,16 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horarios - Vitalik</title>
-    <link rel="stylesheet" href="css/horarios.css">
+    <title>Pago Vitalik</title>
+    <link rel="stylesheet" href="css/pagovitalik.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footergeneral.css">
     <link rel="stylesheet" href="css/footergeneral.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
 </head>
 <body>
     <div class="hm-wrapper"></div>
@@ -68,46 +69,58 @@
 
 
 
-
     <!-- Main Content -->
     <main>
-        <!-- Horarios Bogotá Section -->
-        <section class="city-schedule">
-            <h2 class="city-title">Bogotá</h2>
-            <div class="city-schedule-info">
-                <div class="schedule-box">
-                    <h3><i class="fa fa-clock"></i> Horario</h3>
-                    <p>Lun a Jue: 5h - 22h</p>
-                    <p>Vie: 5h - 21h</p>
-                    <p>Sáb: 7h - 17h</p>
-                    <p>Dom/Festivo: 8h - 17h</p>
+        <section class="form-section">
+            <p>El cobro solo se hará efectivo si autorizas la compra mediante el e-mail de confirmación que te enviaremos posteriormente.</p>
+
+            <h2>Dirección de Cobro</h2>
+            <form>
+                <input type="number" placeholder="Código Postal">
+                <input type="text" placeholder="Sector">
+                <input type="text" placeholder="Dirección">
+                <input type="text" placeholder="Referencia">
+
+                <h2>Forma de pago</h2>
+                <input type="text" placeholder="Tipo de Cobro">
+
+                <h2>Tarjeta de crédito</h2>
+                <input type="text" placeholder="Tipo de identificación">
+                <input type="number" placeholder="Documento de identificación">
+                <input type="number" placeholder="Número de tarjeta">
+                <input type="text" placeholder="Nombre en la tarjeta">
+                <input type="datetime" placeholder="Vencimiento">
+
+                <div class="checkbox-group">
+                    <label>
+                        <input type="radio">
+                        Leí y acepto los términos de inscripción, las normas y los reglamentos de uso.
+                    </label>
                 </div>
-                <div class="city-image">
-                    <img src="imagenes/imagen9.jpg" alt="Gimnasio en Bogotá">
-                </div>
-            </div>
+
+                <a href="#" id="finalizarCompra" class="submit-button">FINALIZAR LA COMPRA</a>
+            </form>
         </section>
 
-        <!-- Línea separadora -->
-        <hr class="section-divider">
-
-        <!-- Horarios Medellín Section -->
-        <section class="city-schedule">
-            <h2 class="city-title">Medellín</h2>
-            <div class="city-schedule-info">
-                <div class="city-image">
-                    <img src="imagenes/imagen7.jpg" alt="Gimnasio en Medellín">
-                </div>
-                <div class="schedule-box">
-                    <h3><i class="fa fa-clock"></i> Horario</h3>
-                    <p>Lun a Jue: 5h - 22h</p>
-                    <p>Vie: 5h - 21h</p>
-                    <p>Sáb: 7h - 17h</p>
-                    <p>Dom/Festivo: 8h - 17h</p>
-                </div>
-            </div>
+        <section class="plan-details">
+            <h2>Plan Vitalik</h2>
+            <p>North Point GYM</p>
+            <p>1ra. Mensualidad <span>$80.000</span></p>
+            <p>Inscripción <span>$0.0</span></p>
+            <hr>
+            <p>Servicios <span>$0.0</span></p>
+            <p class="total">Total <span>$80.000</span></p>
         </section>
     </main>
+
+    <!-- Ventana flotante de confirmación -->
+    <div id="fondoOscuro" class="fondo-oscuro"></div>
+    <div id="ventanaFlotante" class="ventana-flotante">
+        <p>Gracias por Inscribirte con Vitalik</p>
+        <hr>
+        <img src="imagenes/LogoVitalik.png" alt="Logo Vitalik">
+        <p>Esperamos verte pronto en la sede de tu preferencia.</p>
+    </div>
 
     <!-- Footer Principal -->
     <footer>
@@ -123,11 +136,10 @@
             </a>
             <a href="https://www.instagram.com" target="_blank">
                 <img src="imagenes/Instagram_Icon.png" alt="Instagram_Icon">
-                <i class="fa fa-instagram"></i> 
+                <i class="fa fa-instagram"></i>
             </a>
             <a href="tel:+573007756383" target="_blank">
                 <img src="imagenes/WhatsApp_Icon.png" alt="WhatsApp_Icon">
-                <i class="fa fa-whatsapp"></i> 
             </a>
         </div>
         <div class="linea-blanca"></div> <!-- Línea blanca entre redes sociales y links -->
@@ -136,6 +148,8 @@
             <a href="sedes.html">Ubicación</a>
         </div>
     </footer>
-    <script src="Js/header.js"></script>
+
+    <script src="js/pagovitalik.js"></script>
 </body>
 </html>
+

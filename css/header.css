@@ -1,0 +1,256 @@
+/* GENERAL */
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+  border-style: none;
+}
+
+/* WRAPPER */
+.hm-wrapper {
+  position: relative;
+  min-height: 100%;
+}
+
+/* HEADER PRINCIPAL */
+.hm-header {
+  position: fixed;
+  height: 160px; /* Ajusta este valor a lo que necesites */
+  background-color: #8EC63F;
+  padding: 20px 40px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+
+.hm-header .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* HEADER MENU */
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.header-logo img {
+  height: 80px;
+}
+
+.hm-menu {
+  display: flex;
+  justify-content: center;
+  flex-grow: 2;
+}
+
+.hm-menu ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.hm-menu ul li a {
+  color: white;
+  font-size: 1.2rem;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.hm-menu ul li a:hover {
+  color: #388e3c;
+  text-decoration: underline;
+}
+
+/* BOTONES */
+.botones-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: auto;
+  flex-grow: 0;
+}
+
+.botones {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.boton {
+  padding: 10px 20px;
+  text-align: center;
+  background-color: #0C4F30;
+  border-radius: 15px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+  position: relative; /* Ajustamos la posición */
+  z-index: 1; /* Asegura que los botones no se superpongan */
+}
+
+.boton:first-child {
+  margin-left: 0;
+}
+
+.boton:hover {
+  background-color: #6fa02e;
+}
+
+/* Ajustes para evitar que los botones se salgan del contenedor */
+.botones-container {
+  overflow: hidden; /* Previene que los botones se desborden del header */
+}
+
+/* ICONO MENU MOVIL */
+.icon-menu {
+  display: none; /* Ocultar en pantallas grandes */
+}
+
+@media screen and (max-width: 900px) {
+  /* Mostrar menú móvil solo en pantallas pequeñas */
+  .hm-menu ul {
+    display: none;
+  }
+
+  /* Ajustar tamaño del logo en pantallas pequeñas */
+  .header-logo img {
+    max-height: 50px;
+  }
+
+  /* Ocultar los botones de sesión en pantallas pequeñas */
+  .botones-container {
+    display: none;
+  }
+
+  /* Mostrar icono del menú móvil en pantallas pequeñas */
+  .icon-menu {
+    display: block;
+    margin-left: auto;
+    margin-right: 20px;
+  }
+
+  .icon-menu button {
+    background: transparent;
+    border: none;
+    font-size: 22px;
+    color: black;
+  }
+
+  /* Menú móvil */
+  .header-menu-movil {
+    background-color: #5a8514;
+    position: fixed;
+    padding: 40px;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    transform: translate(-100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-menu-movil.active {
+    transform: translate(0%);
+  }
+
+  /* Ocultar los botones dentro del menú móvil por defecto */
+  .header-menu-movil ul li .boton {
+    display: none;
+  }
+
+  /* Mostrar los botones solo cuando el menú móvil esté activo */
+  .header-menu-movil.active ul li .boton {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .header-menu-movil .cerrar-menu {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    border: none;
+    background: #5d82219f;
+    font-size: 18px;
+    color: black;
+  }
+
+  .header-menu-movil ul li {
+    margin: 10px 0;
+  }
+
+  .header-menu-movil ul li a {
+    display: inline-block;
+    color: #fff;
+  }
+}
+
+/* ANIMACIÓN HEADER */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.header-menu-movil.active {
+  animation: fadeIn 0.3s ease-in;
+}
+
+.hm-logo {
+  display: flex;
+  align-items: center;
+}
+
+.text-logo h1 {
+  font-size: 1.5rem;
+  color: white;
+  margin-left: 10px;
+}
+

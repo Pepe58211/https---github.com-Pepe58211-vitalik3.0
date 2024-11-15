@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horarios - Vitalik</title>
-    <link rel="stylesheet" href="css/horarios.css">
+    <title>Registro - Vitalik</title>
+    <link rel="stylesheet" href="css/registro.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footergeneral.css">
     <link rel="stylesheet" href="css/footergeneral.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
 </head>
 <body>
     <div class="hm-wrapper"></div>
@@ -69,43 +70,19 @@
 
 
 
-    <!-- Main Content -->
+    <!-- Main Content (Formulario de Registro) -->
     <main>
-        <!-- Horarios Bogotá Section -->
-        <section class="city-schedule">
-            <h2 class="city-title">Bogotá</h2>
-            <div class="city-schedule-info">
-                <div class="schedule-box">
-                    <h3><i class="fa fa-clock"></i> Horario</h3>
-                    <p>Lun a Jue: 5h - 22h</p>
-                    <p>Vie: 5h - 21h</p>
-                    <p>Sáb: 7h - 17h</p>
-                    <p>Dom/Festivo: 8h - 17h</p>
-                </div>
-                <div class="city-image">
-                    <img src="imagenes/imagen9.jpg" alt="Gimnasio en Bogotá">
-                </div>
-            </div>
-        </section>
-
-        <!-- Línea separadora -->
-        <hr class="section-divider">
-
-        <!-- Horarios Medellín Section -->
-        <section class="city-schedule">
-            <h2 class="city-title">Medellín</h2>
-            <div class="city-schedule-info">
-                <div class="city-image">
-                    <img src="imagenes/imagen7.jpg" alt="Gimnasio en Medellín">
-                </div>
-                <div class="schedule-box">
-                    <h3><i class="fa fa-clock"></i> Horario</h3>
-                    <p>Lun a Jue: 5h - 22h</p>
-                    <p>Vie: 5h - 21h</p>
-                    <p>Sáb: 7h - 17h</p>
-                    <p>Dom/Festivo: 8h - 17h</p>
-                </div>
-            </div>
+        <section class="form-container">
+            <h2>REGISTRO</h2>
+            <!-- Formulario actualizado con action que redirige a index_post.html -->
+            <form action="iniciarsesion.html" method="GET">
+            <form>
+                <input type="text" placeholder="Nombre Completo" required>
+                <input type="email" placeholder="Correo Electrónico" required>
+                <input type="password" placeholder="Contraseña" required>
+                <input type="password" placeholder="Confirmar Contraseña" required>
+                <input type="submit" value="Registrarme" class="submit-btn">
+            </form>
         </section>
     </main>
 
@@ -119,15 +96,12 @@
         <div class="social">
             <a href="https://www.facebook.com" target="_blank">
                 <img src="imagenes/Facebook_Icon.png" alt="Facebook_Icon">
-                <i class="fa fa-facebook"></i>
             </a>
             <a href="https://www.instagram.com" target="_blank">
                 <img src="imagenes/Instagram_Icon.png" alt="Instagram_Icon">
-                <i class="fa fa-instagram"></i> 
             </a>
             <a href="tel:+573007756383" target="_blank">
                 <img src="imagenes/WhatsApp_Icon.png" alt="WhatsApp_Icon">
-                <i class="fa fa-whatsapp"></i> 
             </a>
         </div>
         <div class="linea-blanca"></div> <!-- Línea blanca entre redes sociales y links -->

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Horarios Profesores</title>
+    <link rel="stylesheet" href="css/horariosprofes.css">
+    <link rel="stylesheet" href="css/footergeneralPost.css">
+    <link rel="stylesheet" href="css/headerpost.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+</head>
+<body>
+    <header class="hm-header">
+        <div class="logo-section hm-logo">
+            <!-- Envolvemos el logo y el texto "VITALIK" en un solo enlace -->
+            <a href="index_post.html">
+                <img src="imagenes/LogoVitalik.png" alt="Logo Vitalik">
+                <p>VITALIK</p> <!-- Texto "VITALIK" -->
+            </a>
+        </div>
+        
+        <!-- Menú de navegación en pantallas grandes -->
+        <nav class="nav hm-menu">
+            <a href="horarios2.html">Ver Horarios</a>
+            <a href="contactosp.html">Contacto</a>
+            <a href="planesp.html">Plan</a>
+        </nav>
+        
+        <!-- Sección de usuario (pantallas grandes) -->
+        <a href="usuariop.html" class="usuario-info">
+            <div class="user-container">
+                <p>USUARIO R</p>
+                <p>Plan Vitalik Premium</p>
+            </div>
+            <img src="imagenes/imagen15.png" alt="Usuario">
+        </a>
+    
+        <!-- Ícono del menú móvil -->
+        <div class="icon-menu">
+            <button id="menu-toggle"><i class="fas fa-bars"></i></button>
+        </div>
+    
+        <!-- Menú móvil (pantallas pequeñas) -->
+        <div class="header-menu-movil" id="mobile-menu">
+            <button class="cerrar-menu" id="menu-close"><i class="fas fa-times"></i></button>
+            <ul>
+                <li><a href="horarios2.html">Ver Horarios</a></li>
+                <li><a href="contactosp.html">Contacto</a></li>
+                <li><a href="planesp.html">Plan</a></li>
+                <li><a href="usuariop.html">Ver Perfil</a></li> <!-- Botón de usuario en el menú móvil -->
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Horarios Profesores Section -->
+        <section class="horarios-section">
+            <h2>Horarios</h2>
+            <div class="horarios-container">
+                <div class="horario-row">
+                    <span class="day">Lunes</span>
+                    <span class="time selectable" onclick="toggleDisponibilidad(this)">8:00-11:00</span>
+                    <span class="time selectable" onclick="toggleDisponibilidad(this)">11:00-14:00</span>
+                    <span class="time selectable" onclick="toggleDisponibilidad(this)">14:00-17:00</span>
+                    <span class="time selectable" onclick="toggleDisponibilidad(this)">17:00-20:00</span>
+                    <span class="time selectable" onclick="toggleDisponibilidad(this)">20:00-23:00</span>
+                </div>
+                <div class="horario-row">
+                    <span class="day">Martes</span>
+                    <span class="time selectable" onclick="toggleDisponibilidad(this)">8:00-11:00</span>
+                    <span class="time selectable" onclick="toggleDisponibilidad(this)">11:00-14:00</span>
+                    <span class="time selectable" onclick="toggleDisponibilidad(this)">14:00-17:00</span>
+                    <span class="time selectable" onclick="toggleDisponibilidad(this)">17:00-20:00</span>
+                    <span class="time selectable" onclick="toggleDisponibilidad(this)">20:00-23:00</span>
+                </div>
+                <div class="horario-row">
+                    <span class="day">Miércoles</span>
+                    <span class="time selectable" onclick="toggleDisponibilidad(this)">8:00-11:00</span>
+                    <span class="time selectable" onclick="toggleDisponibilidad(this)">11:00-14:00</span>
+                    <span class="time selectable" onclick="toggleDisponibilidad(this)">14:00-17:00</span>
+                    <span class="time selectable" onclick="toggleDisponibilidad(this)">17:00-20:00</span>
+                    <span class="time selectable" onclick="toggleDisponibilidad(this)">20:00-23:00</span>
+                </div>
+                <div class="horario-row">
+                    <span class="day">Jueves</span>
+                    <span class="time selectable" onclick="toggleDisponibilidad(this)">8:00-11:00</span>
+                    <span class="time selectable" onclick="toggleDisponibilidad(this)">11:00-14:00</span>
+                    <span class="time selectable" onclick="toggleDisponibilidad(this)">14:00-17:00</span>
+                    <span class="time selectable" onclick="toggleDisponibilidad(this)">17:00-20:00</span>
+                    <span class="time selectable" onclick="toggleDisponibilidad(this)">20:00-23:00</span>
+                </div>
+                <div class="horario-row">
+                    <span class="day">Viernes</span>
+                    <span class="time selectable" onclick="toggleDisponibilidad(this)">8:00-11:00</span>
+                    <span class="time selectable" onclick="toggleDisponibilidad(this)">11:00-14:00</span>
+                    <span class="time selectable" onclick="toggleDisponibilidad(this)">14:00-17:00</span>
+                    <span class="time selectable" onclick="toggleDisponibilidad(this)">17:00-20:00</span>
+                    <span class="time selectable" onclick="toggleDisponibilidad(this)">20:00-23:00</span>
+                </div>
+                <div class="horario-row">
+                    <span class="day">Sábado</span>
+                    <span class="time selectable" onclick="toggleDisponibilidad(this)">8:00-11:00</span>
+                    <span class="time selectable" onclick="toggleDisponibilidad(this)">11:00-14:00</span>
+                    <span class="time selectable" onclick="toggleDisponibilidad(this)">14:00-17:00</span>
+                    <span class="time selectable" onclick="toggleDisponibilidad(this)">17:00-20:00</span>
+                    <span class="time selectable" onclick="toggleDisponibilidad(this)">20:00-23:00</span>
+                </div>
+                <div class="horario-row">
+                    <span class="day">Domingo</span>
+                    <span class="time selectable" onclick="toggleDisponibilidad(this)">8:00-11:00</span>
+                    <span class="time selectable" onclick="toggleDisponibilidad(this)">11:00-14:00</span>
+                    <span class="time selectable" onclick="toggleDisponibilidad(this)">14:00-17:00</span>
+                    <span class="time selectable" onclick="toggleDisponibilidad(this)">17:00-20:00</span>
+                    <span class="time selectable" onclick="toggleDisponibilidad(this)">20:00-23:00</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal para mensaje de selección -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <img src="imagenes/LogoVitalik.png" alt="Logo">
+            <p id="modal-message">Hora seleccionada correctamente</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <img src="imagenes/LogoVitalik.png" alt="Vitalik Logo">
+            <p>VITALIK</p>
+        </div>
+        <div class="linea-blanca"></div>
+        <div class="social">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="imagenes/Facebook_Icon.png" alt="Facebook_Icon">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="imagenes/Instagram_Icon.png" alt="Instagram_Icon">
+            </a>
+            <a href="tel:+573007756383" target="_blank">
+                <img src="imagenes/WhatsApp_Icon.png" alt="WhatsApp_Icon">
+            </a>
+        </div>
+        <div class="linea-blanca"></div>
+        <div class="footer-links">
+            <a href="contactosp.html">Contáctenos</a>
+            <a href="sedesp.html">Ubicación</a>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/horariosprofes.js"></script>
+    <script src="js/headerpost.js"></script>
+</body>
+</html>
