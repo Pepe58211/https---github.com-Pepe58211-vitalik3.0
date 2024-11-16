@@ -102,6 +102,18 @@
             <a href="sedes.html">Ubicación</a>
         </div>
     </footer>
-    <script src="Js/header.js"></script>
+
+    <!-- Script para validar contraseñas -->
+    <script>
+        document.querySelector("form").addEventListener("submit", function (e) {
+            const password = document.querySelector('input[name="password"]').value;
+            const confirmPassword = document.querySelector('input[name="confirm_password"]').value;
+
+            if (password !== confirmPassword) {
+                e.preventDefault(); // Evita el envío del formulario
+                alert("Las contraseñas no coinciden.");
+            }
+        });
+    </script>
 </body>
 </html>
